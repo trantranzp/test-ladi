@@ -3,18 +3,37 @@
 
   // Apps Script Web App URL (see google-apps-script/README.md to deploy).
   // Leave empty during local testing — sendLead() just no-ops if unset.
-  var GOOGLE_SCRIPT_URL = '';
+  var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6ixzq9hoiJn0I_eHeNre4wpPcqmrCB0ywS7tMY2DN2Y5_8GhKVyvNSXTb4plF_8_q/exec';
+  var THANK_YOU_URL = 'thank-you.html';
+
+  // Best-effort visitor IP lookup, fetched once on page load and reused for every
+  // form on this page — Apps Script has no way to see the caller's IP itself.
+  var visitorIP = '';
+  fetch('https://api.ipify.org?format=json')
+    .then(function (res) { return res.json(); })
+    .then(function (json) { visitorIP = json.ip || ''; })
+    .catch(function () { /* best-effort — leave blank if it fails */ });
 
   function sendLead(data) {
     if (!GOOGLE_SCRIPT_URL) return;
     fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
+      keepalive: true, // survive the redirect to the thank-you page that follows right after
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(data)
+      body: JSON.stringify(Object.assign({
+        page_url: window.location.href,
+        ip: visitorIP
+      }, data))
     }).catch(function () {
       // Best-effort — a failed lead ping shouldn't block the success UI.
     });
+  }
+
+  function goToThankYou(source) {
+    setTimeout(function () {
+      window.location.href = THANK_YOU_URL + '?source=' + encodeURIComponent(source);
+    }, 600); // brief pause so the user sees the success state and the lead ping/GTM event can fire
   }
 
   // ───────── GTM dataLayer events ─────────
@@ -297,6 +316,7 @@
       });
       trackEvent('form_submit', { form_source: 'main-form', combo: comboLabel });
       submitDone('mainBtn', '✅ Đã nhận — Kỹ sư gọi lại trong 15 phút');
+      goToThankYou('main-form');
     });
   }
 
@@ -312,6 +332,7 @@
       });
       trackEvent('form_submit', { form_source: 'mini-form', crop: cropValue });
       submitDone('miniBtn', '✅ Đã gửi — Kỹ sư liên hệ ngay');
+      goToThankYou('mini-form');
     });
   }
 
@@ -325,6 +346,7 @@
       });
       trackEvent('form_submit', { form_source: 'sticky-bar' });
       submitDone('stickyBtn', '✅ Đã nhận!');
+      goToThankYou('sticky-bar');
     });
   }
 
@@ -339,7 +361,7 @@
       });
       trackEvent('form_submit', { form_source: 'popup', combo: 'Mua 3 tặng 1' });
       submitDone('popupBtn', '✅ Đã đăng ký!');
-      setTimeout(closePopup, 1500);
+      goToThankYou('popup');
     });
   }
 })();

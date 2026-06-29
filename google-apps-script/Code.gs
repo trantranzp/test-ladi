@@ -12,7 +12,7 @@
  */
 
 var TELEGRAM_BOT_TOKEN = '6295828710:AAEKMAsRUVXQiw8ZSyaprxcsIGrQLk1MjJg';
-var TELEGRAM_CHAT_ID = '1003223690049';
+var TELEGRAM_CHAT_ID = '-1003223690049';
 var SHEET_NAME = 'Leads';
 
 function doPost(e) {
@@ -36,7 +36,7 @@ function appendLead(data) {
   var sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = ss.insertSheet(SHEET_NAME);
-    sheet.appendRow(['Thời gian', 'Nguồn', 'Họ tên', 'SĐT', 'Cây trồng', 'Combo']);
+    sheet.appendRow(['Thời gian', 'Nguồn', 'Họ tên', 'SĐT', 'Cây trồng', 'Combo', 'URL nguồn', 'Địa chỉ IP']);
   }
   sheet.appendRow([
     new Date(),
@@ -44,7 +44,9 @@ function appendLead(data) {
     data.name || '',
     data.phone || '',
     data.crop || '',
-    data.combo || ''
+    data.combo || '',
+    data.page_url || '',
+    data.ip || ''
   ]);
 }
 
@@ -57,6 +59,8 @@ function notifyTelegram(data) {
   ];
   if (data.crop) lines.push('Cây trồng: ' + data.crop);
   if (data.combo) lines.push('Combo: ' + data.combo);
+  if (data.page_url) lines.push('Nguồn từ: ' + data.page_url);
+  if (data.ip) lines.push('Địa chỉ IP: ' + data.ip);
 
   var url = 'https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage';
   var payload = {
