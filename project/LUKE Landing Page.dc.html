@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>LUKE – NPK Nhập Khẩu Mỹ | Phân Bón MN</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Be Vietnam Pro',sans-serif;background:#fff;max-width:460px;margin:0 auto;color:#0d1f0e;overflow-x:hidden;padding-bottom:92px;-webkit-font-smoothing:antialiased}
+    input,select,button{font-family:'Be Vietnam Pro',sans-serif}
+    input[type=radio]{accent-color:#0a3d20;width:20px;height:20px;flex-shrink:0}
+    @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}50%{box-shadow:0 0 0 12px rgba(201,168,76,.3)}}
+    @keyframes popIn{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+    @keyframes fadeSlide{0%{opacity:0;transform:translateY(-8px)}100%{opacity:1;transform:translateY(0)}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.55}}
+    @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    @keyframes shimmerGold{0%{background-position:200% center}100%{background-position:-200% center}}
+    @keyframes shimmerRed{0%{background-position:200% center}100%{background-position:-200% center}}
+    @keyframes ringGold{0%{box-shadow:0 4px 18px rgba(201,168,76,.55),0 0 0 0 rgba(201,168,76,.65)}70%{box-shadow:0 4px 18px rgba(201,168,76,.55),0 0 0 16px rgba(201,168,76,0)}100%{box-shadow:0 4px 18px rgba(201,168,76,.55),0 0 0 0 rgba(201,168,76,0)}}
+    @keyframes ringRed{0%{box-shadow:0 4px 18px rgba(185,28,28,.5),0 0 0 0 rgba(185,28,28,.6)}70%{box-shadow:0 4px 18px rgba(185,28,28,.5),0 0 0 16px rgba(185,28,28,0)}100%{box-shadow:0 4px 18px rgba(185,28,28,.5),0 0 0 0 rgba(185,28,28,0)}}
+    @keyframes arrowSlide{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+    @keyframes btnFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+    details>summary{list-style:none;-webkit-appearance:none}
+    details>summary::-webkit-details-marker{display:none}
+    details>summary>span{display:inline-block;transition:transform .25s ease;font-style:normal}
+    details[open]>summary>span{transform:rotate(45deg);color:#b91c1c}
+    details>div{animation:fadeSlide .22s ease}
+    image-slot{display:block}
+  </style>
+</helmet>
+
+<!-- ═══ TOPBAR ═══ -->
+<div style="position:sticky;top:0;z-index:300;background:#0a3d20;display:flex;align-items:center;justify-content:space-between;padding:13px 16px;gap:10px;border-bottom:3px solid #c9a84c;box-shadow:0 2px 10px rgba(0,0,0,.35)">
+  <div style="color:#fff;line-height:1.3">
+    <div style="font-size:19px;font-weight:900;letter-spacing:.04em">PHÂN BÓN MN</div>
+    <div style="font-size:12px;color:rgba(255,255,255,.6);font-weight:500;margin-top:1px">NPK Nhập Khẩu Mỹ · Dạng Gel Đậm Đặc</div>
+  </div>
+  <a href="tel:0876186796" style="background:#c9a84c;color:#0a3d20;padding:12px 18px;border-radius:10px;font-size:16px;font-weight:800;text-decoration:none;white-space:nowrap;letter-spacing:.02em;display:flex;align-items:center;gap:6px">📞 Gọi ngay</a>
+</div>
+
+<!-- ═══ TRUST BAR TICKER ═══ -->
+<div style="background:#f4f1eb;border-bottom:1px solid #ddd8ce;overflow:hidden;padding:11px 0">
+  <div style="display:inline-flex;align-items:center;gap:0;animation:ticker 22s linear infinite;white-space:nowrap">
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">🇺🇸 Nhập khẩu chính ngạch từ Mỹ</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">✅ Đã sử dụng thực tế bởi 1.000+ nhà vườn</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">💯 Cam kết hoàn tiền 100%</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">🚚 Freeship toàn quốc</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">🌿 Hữu cơ 70% — không nóng rễ</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">⏰ Thấy kết quả sau 3 ngày</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <!-- Lặp lại để chạy liên tục không giật -->
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">🇺🇸 Nhập khẩu chính ngạch từ Mỹ</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">✅ Đã sử dụng thực tế bởi 1.000+ nhà vườn</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">💯 Cam kết hoàn tiền 100%</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">🚚 Freeship toàn quốc</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">🌿 Hữu cơ 70% — không nóng rễ</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#333;padding:0 20px">⏰ Thấy kết quả sau 3 ngày</span>
+    <span style="color:#c9a84c;font-size:16px;font-weight:900">·</span>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<div style="background:#0a3d20;padding:0 0 0;position:relative;overflow:hidden">
+  <!-- Glow overlay -->
+  <div style="position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:340px;height:340px;background:radial-gradient(circle,rgba(201,168,76,.22) 0%,transparent 70%);pointer-events:none"></div>
+  <!-- HEADLINE -->
+  <div style="padding:24px 20px 0">
+    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(201,168,76,.18);border:1px solid rgba(201,168,76,.5);color:#f0dfa0;font-size:12px;font-weight:700;letter-spacing:.07em;padding:5px 12px;border-radius:4px;margin-bottom:14px">🇺🇸 NPK NHẬP KHẨU MỸ · DẠNG GEL ĐẬM ĐẶC</div>
+    <div style="font-size:15px;color:rgba(255,255,255,.7);font-weight:600;margin-bottom:10px;line-height:1.4">Tưới hoài mà cây vẫn vàng lá, đọt không ra? →</div>
+    <h1 style="font-size:28px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:4px;letter-spacing:-.01em;white-space:nowrap">Đổi sang NPK Nhập Mỹ —</h1>
+    <div style="font-size:52px;font-weight:900;line-height:1;margin-bottom:6px;letter-spacing:-.03em;background:linear-gradient(90deg,#f0d070,#c9a84c,#f0d070);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">3 Ngày Thấy Rõ</div>
+    <div style="font-size:15px;color:rgba(255,255,255,.75);line-height:1.6;margin-bottom:20px"><span style="color:#f0dfa0;font-weight:800">1 chai 500ml → 800–1.000 lít nước tưới</span><br>Hữu cơ 70% · Không nóng rễ · Không tích muối</div>
+  </div>
+  <!-- TIMELINE 3 ô -->
+  <div style="display:flex;gap:0;margin:0 20px 22px;border:2px solid rgba(201,168,76,.4);border-radius:14px;overflow:hidden">
+    <div style="flex:1;padding:14px 8px;text-align:center;background:rgba(255,255,255,.05);border-right:1px solid rgba(201,168,76,.25)">
+      <div style="font-size:40px;font-weight:900;color:#f0d070;line-height:1">3</div>
+      <div style="font-size:10px;color:rgba(255,255,255,.6);font-weight:800;letter-spacing:.08em">NGÀY</div>
+      <div style="font-size:13px;color:#fff;margin-top:6px;line-height:1.4;font-weight:600">Rễ non nhú<br>đất xốp hơn</div>
+    </div>
+    <div style="flex:1;padding:14px 8px;text-align:center;background:rgba(201,168,76,.1);border-right:1px solid rgba(201,168,76,.25)">
+      <div style="font-size:40px;font-weight:900;color:#f0d070;line-height:1">7</div>
+      <div style="font-size:10px;color:rgba(255,255,255,.6);font-weight:800;letter-spacing:.08em">NGÀY</div>
+      <div style="font-size:13px;color:#fff;margin-top:6px;line-height:1.4;font-weight:600">Đọt bung<br>lá xanh bền</div>
+    </div>
+    <div style="flex:1;padding:14px 8px;text-align:center;background:rgba(255,255,255,.05)">
+      <div style="font-size:40px;font-weight:900;color:#f0d070;line-height:1">14</div>
+      <div style="font-size:10px;color:rgba(255,255,255,.6);font-weight:800;letter-spacing:.08em">NGÀY</div>
+      <div style="font-size:13px;color:#fff;margin-top:6px;line-height:1.4;font-weight:600">Lá dày bóng<br>cành cứng</div>
+    </div>
+  </div>
+  <!-- SOCIAL PROOF -->
+  <div style="display:flex;align-items:stretch;gap:0;margin:0 20px 22px;border-radius:12px;overflow:hidden">
+    <div style="flex:1;padding:12px 6px;text-align:center;background:#1a5c35;border-right:1px solid rgba(255,255,255,.1)">
+      <div style="font-size:22px;font-weight:900;color:#f0d070;line-height:1">3.200+</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.85);margin-top:3px;font-weight:700">Nhà vườn</div>
+    </div>
+    <div style="flex:1;padding:12px 6px;text-align:center;background:#1a5c35;border-right:1px solid rgba(255,255,255,.1)">
+      <div style="font-size:22px;font-weight:900;color:#f0d070;line-height:1">4.9★</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.85);margin-top:3px;font-weight:700">Đánh giá</div>
+    </div>
+    <div style="flex:1;padding:12px 6px;text-align:center;background:#1a5c35">
+      <div style="font-size:22px;font-weight:900;color:#f0d070;line-height:1">862</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.85);margin-top:3px;font-weight:700">Reviews</div>
+    </div>
+  </div>
+  <!-- CTAs -->
+  <div style="padding:0 20px 36px;display:flex;flex-direction:column;gap:10px">
+    <button type="button" onClick="{{ onOpenPopup }}" style="display:block;width:100%;background:linear-gradient(90deg,#9a7530,#c9a84c,#f0d070,#e0b84a,#9a7530);background-size:300% auto;color:#0a3d20;padding:20px;border-radius:14px;font-size:20px;font-weight:900;text-align:center;letter-spacing:.05em;text-transform:uppercase;animation:shimmerGold 2.8s linear infinite,ringGold 2.2s ease-out infinite;box-shadow:0 6px 30px rgba(201,168,76,.5);border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">🌟 NHẬN BÁO GIÁ NGAY</button>
+    <a href="#proof" style="display:block;padding:14px;border-radius:14px;font-size:16px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none;border:2px solid rgba(255,255,255,.3);text-align:center;animation:btnFloat 2.5s ease-in-out infinite">Xem kết quả thực tế ↓</a>
+  </div>
+  <div style="position:absolute;bottom:-1px;left:0;right:0;height:28px;background:#b91c1c;clip-path:ellipse(55% 100% at 50% 100%)"></div>
+</div>
+
+<!-- ═══ URGENCY ═══ -->
+<div style="background:#b91c1c;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+  <div>
+    <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.8);margin-bottom:4px;letter-spacing:.04em">⏰ ƯU ĐÃI MUA 3 TẶNG 1 KẾT THÚC SAU</div>
+    <div style="font-size:32px;font-weight:900;letter-spacing:5px;color:#fff;line-height:1;animation:blink 2s ease-in-out infinite">{{ countdown }}</div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:14px;color:rgba(255,255,255,.85);margin-bottom:6px;font-weight:600">Còn <span style="color:#f0dfa0;font-size:18px;font-weight:900">{{ stock }}</span>/100 suất</div>
+    <div style="background:rgba(255,255,255,.2);border-radius:20px;height:10px;width:110px;overflow:hidden">
+      <div style="height:100%;background:#c9a84c;border-radius:20px;width:22%;transition:width .5s"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PRODUCT SHOWCASE ═══ -->
+<div style="background:#0a3d20;padding:0 0 4px">
+  <div style="padding:18px 20px 10px;display:flex;align-items:center;gap:10px">
+    <div style="width:4px;height:22px;background:#c9a84c;border-radius:2px;flex-shrink:0"></div>
+    <div style="font-size:15px;font-weight:800;color:#c9a84c;letter-spacing:.06em;text-transform:uppercase">Bộ 4 mã NPK nhập Mỹ · Toàn bộ giai đoạn</div>
+  </div>
+  <div style="padding:0 14px 14px">
+    <img src="./img/luke_banner.png" alt="LUKE NPK Hữu Cơ Dạng Gel – Bộ 4 mã" style="width:100%;display:block;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.4)">
+  </div>
+  <div style="padding:0 14px 18px">
+    <button type="button" onClick="{{ onOpenPopup }}" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:linear-gradient(90deg,#9a7530,#c9a84c,#f0d070,#e0b84a,#9a7530);background-size:300% auto;color:#0a3d20;padding:15px;border-radius:12px;font-size:16px;font-weight:900;text-align:center;letter-spacing:.05em;text-transform:uppercase;animation:shimmerGold 2.8s linear infinite;border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">✨ Nhận báo giá ngay →</button>
+  </div>
+</div>
+
+<!-- CROP SELECTOR removed -->
+<div style="display:none">
+  <div style="font-size:21px;font-weight:900;color:#0a3d20;margin-bottom:5px">🌱 Bạn đang trồng cây gì?</div>
+  <div style="font-size:16px;color:#666;margin-bottom:18px;line-height:1.4">Bấm vào cây đang trồng → Xem sản phẩm + liều dùng phù hợp</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:9px">
+    <button data-crop-btn="0" type="button" onClick="{{ onCrop0 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">🌳<br>Sầu riêng</button>
+    <button data-crop-btn="1" type="button" onClick="{{ onCrop1 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">🌵<br>Thanh long</button>
+    <button data-crop-btn="2" type="button" onClick="{{ onCrop2 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">🍊<br>Cam/Bưởi</button>
+    <button data-crop-btn="3" type="button" onClick="{{ onCrop3 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">🥭<br>Xoài/Nhãn</button>
+    <button data-crop-btn="4" type="button" onClick="{{ onCrop4 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">☕<br>Tiêu/Cà phê</button>
+    <button data-crop-btn="5" type="button" onClick="{{ onCrop5 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">🥬<br>Rau màu</button>
+    <button data-crop-btn="6" type="button" onClick="{{ onCrop6 }}" style="background:#f0ede6;border:2px solid #ddd8ce;border-radius:12px;padding:11px 4px;cursor:pointer;font-size:14px;font-weight:700;color:#0a3d20;text-align:center;line-height:1.4;min-height:68px;transition:all .15s">🌾<br>Lúa</button>
+  </div>
+  <sc-if value="{{ hasCropRec }}" hint-placeholder-val="{{ false }}">
+    <div style="margin-top:14px;background:linear-gradient(135deg,#0a3d20,#1a6b3a);border-radius:14px;padding:16px 18px;animation:fadeSlide .3s ease">
+      <div style="font-size:15px;font-weight:800;color:#c9a84c;margin-bottom:7px">💡 Gợi ý cho {{ selectedCrop }}:</div>
+      <div style="font-size:15px;color:rgba(255,255,255,.92);line-height:1.65">{{ cropRecTip }}</div>
+      <a href="#products" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:#c9a84c;color:#0a3d20;padding:10px 18px;border-radius:8px;font-size:15px;font-weight:800;text-decoration:none">Xem sản phẩm phù hợp →</a>
+    </div>
+  </sc-if>
+</div>
+
+<!-- PAIN SECTION removed -->
+
+
+<!-- ═══ SO SÁNH ĐỐI THỦ (MỚI) ═══ -->
+<div style="background:#0a3d20;padding:26px 20px 28px">
+  <div style="text-align:center;margin-bottom:20px">
+    <div style="font-size:22px;font-weight:900;color:#c9a84c;margin-bottom:5px">🏆 Tại sao chọn LUKE hơn các loại khác?</div>
+    <div style="font-size:15px;color:rgba(255,255,255,.65);line-height:1.5">So sánh thực tế — bà con xem ngay bên dưới</div>
+  </div>
+  <!-- Header -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+    <div style="background:#c9a84c;border-radius:10px 10px 0 0;padding:10px 12px;text-align:center">
+      <div style="font-size:15px;font-weight:900;color:#0a3d20">🇺🇸 LUKE NPK Mỹ</div>
+      <div style="font-size:12px;color:rgba(10,61,32,.7);margin-top:2px;font-weight:600">← Sản phẩm này</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px 10px 0 0;padding:10px 12px;text-align:center">
+      <div style="font-size:15px;font-weight:700;color:rgba(255,255,255,.6)">Phân thông thường</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.35);margin-top:2px">Các loại khác</div>
+    </div>
+  </div>
+  <!-- Row 1 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">
+    <div style="background:rgba(201,168,76,.13);border:1.5px solid rgba(201,168,76,.35);border-radius:10px;padding:12px">
+      <div style="font-size:24px;font-weight:900;color:#c9a84c;line-height:1">1.000 lít</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:4px;line-height:1.5">✅ 1 chai pha 800–1.000L — tiết kiệm gấp 3 lần</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:24px;font-weight:900;color:rgba(255,255,255,.35);line-height:1">300 lít</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:4px;line-height:1.5">❌ Chỉ pha 200–400L — tốn nhiều chai hơn</div>
+    </div>
+  </div>
+  <!-- Row 2 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">
+    <div style="background:rgba(201,168,76,.13);border:1.5px solid rgba(201,168,76,.35);border-radius:10px;padding:12px">
+      <div style="font-size:24px;font-weight:900;color:#c9a84c;line-height:1">70% hữu cơ</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:4px;line-height:1.5">✅ Không nóng rễ, không tích muối — đất tơi xốp mãi</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:24px;font-weight:900;color:rgba(255,255,255,.35);line-height:1">≤5% hữu cơ</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:4px;line-height:1.5">❌ Hóa học, đất chai, cây kiệt sức theo năm</div>
+    </div>
+  </div>
+  <!-- Row 3 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div style="background:rgba(201,168,76,.13);border:1.5px solid rgba(201,168,76,.35);border-radius:10px;padding:12px">
+      <div style="font-size:24px;font-weight:900;color:#c9a84c;line-height:1">Hoàn 100%</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:4px;line-height:1.5">✅ Không hiệu quả — hoàn tiền toàn bộ</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:24px;font-weight:900;color:rgba(255,255,255,.35);line-height:1">Không có</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:4px;line-height:1.5">❌ Mua về không hiệu quả là mất tiền</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SYMPTOM SELECTOR ═══ -->
+<div id="trieu-chung" style="background:#faf8f3;padding:22px 20px 20px;border-bottom:2px solid #ddd8ce">
+  <div style="font-size:21px;font-weight:900;color:#0a3d20;margin-bottom:5px">🔍 Cây bà con đang có triệu chứng gì?</div>
+  <div style="font-size:15px;color:#666;margin-bottom:16px;line-height:1.45">Bấm vào triệu chứng → Xem nên dùng mã nào</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <button data-sym-btn="0" type="button" onClick="{{ onSym0 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🍂</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Vàng Lá</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Lá mất màu xanh, vàng từ mép vào, rụng sớm</div>
+    </button>
+    <button data-sym-btn="1" type="button" onClick="{{ onSym1 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🪴</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Đọt Không Ra</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Cây ngưng tăng trưởng, đọt không bung, cứng lại</div>
+    </button>
+    <button data-sym-btn="2" type="button" onClick="{{ onSym2 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🪨</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Rễ Kém / Đất Chai</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Rễ ít, đất cứng vón cục, nước thoát kém</div>
+    </button>
+    <button data-sym-btn="3" type="button" onClick="{{ onSym3 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🥀</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Cây Ốm Yếu</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Thân mảnh, lá nhỏ, chậm lớn, dễ đổ ngã</div>
+    </button>
+  </div>
+  <sc-if value="{{ hasSymRec }}" hint-placeholder-val="{{ false }}">
+    <div style="margin-top:14px;background:linear-gradient(135deg,#0a3d20,#1a6b3a);border-radius:14px;padding:16px 18px;animation:fadeSlide .3s ease">
+      <div style="font-size:15px;font-weight:800;color:#c9a84c;margin-bottom:7px">💡 {{ selectedSym }} — Nên dùng:</div>
+      <div style="font-size:15px;color:rgba(255,255,255,.92);line-height:1.65">{{ symRec }}</div>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <a href="#form" style="flex:1;background:linear-gradient(90deg,#9a7530,#c9a84c,#f0d070,#c9a84c,#9a7530);background-size:200% auto;color:#0a3d20;padding:11px;border-radius:8px;font-size:15px;font-weight:800;text-decoration:none;text-align:center;animation:shimmerGold 2.8s linear infinite">Đặt ngay →</a>
+        <a href="tel:0876186796" style="padding:11px 14px;border-radius:8px;font-size:15px;font-weight:700;color:rgba(255,255,255,.85);text-decoration:none;border:1.5px solid rgba(255,255,255,.3)">Hỏi kỹ sư</a>
+      </div>
+    </div>
+  </sc-if>
+</div>
+
+<!-- ═══ BEFORE/AFTER ═══ -->
+<!-- ═══ PRODUCTS ═══ -->
+<div id="products">
+  <div style="display:flex;align-items:center;gap:10px;padding:24px 20px 14px">
+    <div style="width:4px;height:24px;background:#c9a84c;border-radius:2px;flex-shrink:0"></div>
+    <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">4 mã NPK · Đúng giai đoạn từng cây</h2>
+  </div>
+  <div style="height:1px;background:#ddd8ce;margin:0 20px"></div>
+  <div style="background:#f4f1eb;padding:12px 0 4px">
+    <div style="text-align:center;font-size:14px;color:#888;margin-bottom:12px;font-weight:700;letter-spacing:.04em">← Vuốt ngang để xem đủ 4 mã →</div>
+    <div id="carousel" style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:0 20px 14px;scrollbar-width:none">
+
+      <!-- Card 1: 20-20-20 -->
+      <div data-card="1" style="flex:0 0 calc(100% - 40px);scroll-snap-align:start;background:#fff;border-radius:14px;overflow:hidden;border:1px solid #ddd8ce;box-shadow:0 2px 14px rgba(0,0,0,.07);display:flex;flex-direction:column">
+        <!-- Image 16:9 + overlay -->
+        <div style="position:relative;aspect-ratio:4/3;overflow:hidden">
+          <img src="./img/npk_can_bang.png" alt="LUKE 20-20-20" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.18) 0%,rgba(10,40,80,.75) 100%)"></div>
+          <div style="position:absolute;top:10px;left:12px;background:#b91c1c;color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;padding:4px 10px;border-radius:5px">ĐANG HOT</div>
+          <div style="position:absolute;bottom:12px;left:14px;right:14px">
+            <div style="font-size:36px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">20-20-20</div>
+            <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,.8);margin-top:3px">Dưỡng định kỳ · Nuôi trái · Sáng bông</div>
+            <div style="display:flex;gap:5px;margin-top:7px;flex-wrap:wrap">
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌳 Cây ăn trái</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🥬 Rau màu</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌸 Hoa lan</span>
+            </div>
+          </div>
+        </div>
+        <!-- Body gọn -->
+        <div style="padding:14px 16px 16px;flex:1;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div style="display:flex;align-items:baseline;gap:8px">
+              <span style="font-size:24px;font-weight:900;color:#b91c1c;line-height:1">210.000₫</span>
+              <span style="font-size:13px;color:#bbb;text-decoration:line-through">300.000₫</span>
+              <span style="font-size:12px;color:#888">/ chai</span>
+            </div>
+            <span style="background:#b91c1c;color:#fff;font-size:13px;font-weight:800;padding:5px 10px;border-radius:6px">–30%</span>
+          </div>
+          <ul style="list-style:none;margin-bottom:14px;display:flex;flex-direction:column;gap:7px;flex:1">
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Đạm–Lân–Kali cân bằng, xanh bền, tăng hấp thu dinh dưỡng</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Sáng mắc cua, mập bông — ra hoa nhiều đồng loạt</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Chống nghẹt hoa, hoa bền đẹp không rụng sớm</li>
+          </ul>
+          <button type="button" onClick="{{ onOpenPopup }}" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:linear-gradient(135deg,#0a3d20 0%,#166534 100%);color:#fff;padding:14px;border-radius:10px;font-size:15px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 3px 12px rgba(10,61,32,.4);border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Nhận báo giá <span style="display:inline-block;animation:arrowSlide 1.2s ease-in-out infinite">→</span></button>
+        </div>
+      </div>
+
+      <!-- Card 2: 30-10-10 -->
+      <div style="flex:0 0 calc(100% - 40px);scroll-snap-align:start;background:#fff;border-radius:14px;overflow:hidden;border:1px solid #ddd8ce;box-shadow:0 2px 14px rgba(0,0,0,.07);display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:4/3;overflow:hidden">
+          <img src="./img/proof4.png" alt="LUKE 30-10-10" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.18) 0%,rgba(80,20,5,.75) 100%)"></div>
+          <div style="position:absolute;top:10px;left:12px;background:#c9a84c;color:#0a3d20;font-size:11px;font-weight:700;letter-spacing:.05em;padding:4px 10px;border-radius:5px">BÁN CHẠY #1</div>
+          <div style="position:absolute;bottom:12px;left:14px;right:14px">
+            <div style="font-size:36px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">30-10-10</div>
+            <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,.8);margin-top:3px">Bung đọt · Phục hồi · Kích bật mầm</div>
+            <div style="display:flex;gap:5px;margin-top:7px;flex-wrap:wrap">
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌵 Thanh long</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🥬 Rau màu</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌾 Lúa</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding:14px 16px 16px;flex:1;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div style="display:flex;align-items:baseline;gap:8px">
+              <span style="font-size:24px;font-weight:900;color:#b91c1c;line-height:1">175.000₫</span>
+              <span style="font-size:13px;color:#bbb;text-decoration:line-through">280.000₫</span>
+              <span style="font-size:12px;color:#888">/ chai</span>
+            </div>
+            <span style="background:#b91c1c;color:#fff;font-size:13px;font-weight:800;padding:5px 10px;border-radius:6px">–37%</span>
+          </div>
+          <ul style="list-style:none;margin-bottom:14px;display:flex;flex-direction:column;gap:7px;flex:1">
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Kích bật mầm mạnh, bung đọt đồng loạt — đọt mập, lá xanh dày</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Rút ngắn kiến thiết cơ bản, phục hồi nhanh sau thu hoạch</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Khắc phục nghẹn đọt, đọt ra lọt xọt kém phát triển</li>
+          </ul>
+          <button type="button" onClick="{{ onOpenPopup }}" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:linear-gradient(135deg,#0a3d20 0%,#166534 100%);color:#fff;padding:14px;border-radius:10px;font-size:15px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 3px 12px rgba(10,61,32,.4);border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Nhận báo giá <span style="display:inline-block;animation:arrowSlide 1.2s ease-in-out infinite">→</span></button>
+        </div>
+      </div>
+
+      <!-- Card 3: 10-55-10 -->
+      <div style="flex:0 0 calc(100% - 40px);scroll-snap-align:start;background:#fff;border-radius:14px;overflow:hidden;border:1px solid #ddd8ce;box-shadow:0 2px 14px rgba(0,0,0,.07);display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:4/3;overflow:hidden">
+          <img src="./img/npk_kich_hoa.png" alt="LUKE 10-55-10" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.18) 0%,rgba(60,30,10,.78) 100%)"></div>
+          <div style="position:absolute;bottom:12px;left:14px;right:14px">
+            <div style="font-size:36px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">10-55-10</div>
+            <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,.8);margin-top:3px">Kéo mắc cua · Ra hoa · Đánh thức mầm ngủ</div>
+            <div style="display:flex;gap:5px;margin-top:7px;flex-wrap:wrap">
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌳 Sầu riêng</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🍊 Cam/Bưởi</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌵 Thanh long</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding:14px 16px 16px;flex:1;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div style="display:flex;align-items:baseline;gap:8px">
+              <span style="font-size:24px;font-weight:900;color:#b91c1c;line-height:1">238.000₫</span>
+              <span style="font-size:13px;color:#bbb;text-decoration:line-through">340.000₫</span>
+              <span style="font-size:12px;color:#888">/ chai</span>
+            </div>
+            <span style="background:#b91c1c;color:#fff;font-size:13px;font-weight:800;padding:5px 10px;border-radius:6px">–30%</span>
+          </div>
+          <ul style="list-style:none;margin-bottom:14px;display:flex;flex-direction:column;gap:7px;flex:1">
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Lân cao 55 — kích rễ mạnh, kéo mắc cua, tược bông dài đẹp</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Sáng mắc cua, mập bông — đánh thức mầm hoa đang ngủ</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Chống khô hoa, đen hoa, rụng hoa — hoa bền sức sống</li>
+          </ul>
+          <button type="button" onClick="{{ onOpenPopup }}" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:linear-gradient(135deg,#0a3d20 0%,#166534 100%);color:#fff;padding:14px;border-radius:10px;font-size:15px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 3px 12px rgba(10,61,32,.4);border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Nhận báo giá <span style="display:inline-block;animation:arrowSlide 1.2s ease-in-out infinite">→</span></button>
+        </div>
+      </div>
+
+      <!-- Card 4: 10-0-30 -->
+      <div style="flex:0 0 calc(100% - 40px);scroll-snap-align:start;background:#fff;border-radius:14px;overflow:hidden;border:1px solid #ddd8ce;box-shadow:0 2px 14px rgba(0,0,0,.07);display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:4/3;overflow:hidden">
+          <img src="./img/npk_nuoi_trai.png" alt="LUKE 10-0-30" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.18) 0%,rgba(5,40,20,.78) 100%)"></div>
+          <div style="position:absolute;bottom:12px;left:14px;right:14px">
+            <div style="font-size:36px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">10-0-30</div>
+            <div style="font-size:13px;font-weight:700;color:rgba(255,255,255,.8);margin-top:3px">Vào cơm · Tăng độ ngọt · Phá mầm ngủ</div>
+            <div style="display:flex;gap:5px;margin-top:7px;flex-wrap:wrap">
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌳 Sầu riêng</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🌵 Thanh long</span>
+              <span style="background:rgba(255,255,255,.18);color:#fff;font-size:12px;padding:3px 9px;border-radius:20px">🍊 Cây ăn trái</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding:14px 16px 16px;flex:1;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div style="display:flex;align-items:baseline;gap:8px">
+              <span style="font-size:24px;font-weight:900;color:#b91c1c;line-height:1">196.000₫</span>
+              <span style="font-size:13px;color:#bbb;text-decoration:line-through">280.000₫</span>
+              <span style="font-size:12px;color:#888">/ chai</span>
+            </div>
+            <span style="background:#b91c1c;color:#fff;font-size:13px;font-weight:800;padding:5px 10px;border-radius:6px">–30%</span>
+          </div>
+          <ul style="list-style:none;margin-bottom:14px;display:flex;flex-direction:column;gap:7px;flex:1">
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Kali cao 30 — vào cơm nhanh, dày múi, cơm vàng thơm ngọt</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Phá mầm ngủ, kích mắc cua, kích bông mạnh đồng loạt</li>
+            <li style="font-size:14px;color:#333;line-height:1.5;display:flex;gap:8px"><span style="color:#0a3d20;font-weight:700;flex-shrink:0">→</span>Da trái căng bóng sáng, lên màu đẹp — thương lái ưu tiên mua</li>
+          </ul>
+          <button type="button" onClick="{{ onOpenPopup }}" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:linear-gradient(135deg,#0a3d20 0%,#166534 100%);color:#fff;padding:14px;border-radius:10px;font-size:15px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 3px 12px rgba(10,61,32,.4);border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Nhận báo giá <span style="display:inline-block;animation:arrowSlide 1.2s ease-in-out infinite">→</span></button>
+        </div>
+      </div>
+
+    </div>
+    <!-- Dots -->
+    <div style="display:flex;justify-content:center;gap:8px;padding:4px 0 16px">
+      <button data-dot type="button" onClick="{{ onDot0 }}" style="width:28px;height:10px;border-radius:5px;background:#0a3d20;border:none;cursor:pointer;transition:all .2s;padding:0"></button>
+      <button data-dot type="button" onClick="{{ onDot1 }}" style="width:10px;height:10px;border-radius:50%;background:#ddd8ce;border:none;cursor:pointer;transition:all .2s;padding:0"></button>
+      <button data-dot type="button" onClick="{{ onDot2 }}" style="width:10px;height:10px;border-radius:50%;background:#ddd8ce;border:none;cursor:pointer;transition:all .2s;padding:0"></button>
+      <button data-dot type="button" onClick="{{ onDot3 }}" style="width:10px;height:10px;border-radius:50%;background:#ddd8ce;border:none;cursor:pointer;transition:all .2s;padding:0"></button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ COMBO ═══ -->
+<div style="padding:24px 20px 8px;display:flex;align-items:center;gap:10px">
+  <div style="width:4px;height:24px;background:#c9a84c;border-radius:2px;flex-shrink:0"></div>
+  <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Chọn Combo · Tiết Kiệm Hơn</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;padding:8px 20px 20px">
+
+  <!-- Card 1: Mua 2 chai -->
+  <div style="border:1.5px solid #ddd8ce;border-radius:14px;overflow:hidden;background:#fff">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 18px 12px">
+      <div>
+        <div style="font-size:17px;font-weight:800;color:#0d1f0e;margin-bottom:4px">Mua 2 chai</div>
+        <div style="font-size:14px;color:#888">134.000₫/chai · Freeship</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:26px;font-weight:900;color:#b91c1c;line-height:1">268.000₫</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">tiết kiệm 268.000₫</div>
+      </div>
+    </div>
+    <div style="padding:0 14px 14px">
+      <button type="button" onClick="{{ onOpenPopup }}" style="display:block;width:100%;background:#0a3d20;color:#fff;padding:13px;border-radius:10px;font-size:16px;font-weight:800;text-align:center;border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Đặt combo 2 chai →</button>
+    </div>
+  </div>
+
+  <!-- Card 2: Mua 3 tặng 1 — BÁN CHẠY NHẤT -->
+  <div style="border:2px solid #c9a84c;border-radius:14px;overflow:hidden;background:#fffaed;position:relative">
+    <div style="position:absolute;top:14px;right:14px;background:#b91c1c;color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.05em">BÁN CHẠY NHẤT</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 18px 12px">
+      <div>
+        <div style="font-size:17px;font-weight:800;color:#0d1f0e;margin-bottom:4px">Mua 3 tặng 1 🎁</div>
+        <div style="font-size:14px;color:#555">Nhận 4 chai · chỉ 201.000₫/chai</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:13px;color:#aaa;text-decoration:line-through;line-height:1.3">1.072.000₫</div>
+        <div style="font-size:26px;font-weight:900;color:#b91c1c;line-height:1.1">804.000₫</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">tiết kiệm 268.000₫</div>
+      </div>
+    </div>
+    <div style="padding:0 14px 14px">
+      <button type="button" onClick="{{ onOpenPopup }}" style="display:block;width:100%;background:#c9a84c;color:#0a3d20;padding:13px;border-radius:10px;font-size:16px;font-weight:900;text-align:center;border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Đặt ngay combo này →</button>
+    </div>
+  </div>
+
+  <!-- Card 3: Mua 5 tặng 2 — CÓ LỢI NHẤT -->
+  <div style="border:1.5px solid #ddd8ce;border-radius:14px;overflow:hidden;background:#fff;position:relative">
+    <div style="position:absolute;top:14px;right:14px;background:#0a3d20;color:#c9a84c;font-size:12px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.05em">CÓ LỢI NHẤT</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 18px 12px">
+      <div>
+        <div style="font-size:17px;font-weight:800;color:#0d1f0e;margin-bottom:4px">Mua 5 tặng 2 🎁🎁</div>
+        <div style="font-size:14px;color:#555">Nhận 7 chai · chỉ 192.000₫/chai</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:13px;color:#aaa;text-decoration:line-through;line-height:1.3">1.876.000₫</div>
+        <div style="font-size:26px;font-weight:900;color:#b91c1c;line-height:1.1">1.340.000₫</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">tiết kiệm 536.000₫</div>
+      </div>
+    </div>
+    <div style="padding:0 14px 14px">
+      <button type="button" onClick="{{ onOpenPopup }}" style="display:block;width:100%;background:#0a3d20;color:#fff;padding:13px;border-radius:10px;font-size:16px;font-weight:800;text-align:center;border:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif">Đặt combo 5+2 chai →</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ TRUST BADGES ═══ -->
+<div style="background:#fff;padding:20px 20px 22px;border-top:1px solid #ddd8ce;border-bottom:1px solid #ddd8ce">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div style="display:flex;align-items:center;gap:10px;padding:13px 14px;background:#faf8f3;border:1.5px solid #ddd8ce;border-radius:12px">
+      <span style="font-size:26px;flex-shrink:0">💰</span>
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#0a3d20;line-height:1.3">Trả tiền khi nhận</div>
+        <div style="font-size:12px;color:#888;margin-top:2px;line-height:1.4">Kiểm tra hàng trước, COD toàn quốc</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;padding:13px 14px;background:#faf8f3;border:1.5px solid #ddd8ce;border-radius:12px">
+      <span style="font-size:26px;flex-shrink:0">🚚</span>
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#0a3d20;line-height:1.3">Freeship toàn quốc</div>
+        <div style="font-size:12px;color:#888;margin-top:2px;line-height:1.4">Giao tận nhà, không phụ phí</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;padding:13px 14px;background:#faf8f3;border:1.5px solid #ddd8ce;border-radius:12px">
+      <span style="font-size:26px;flex-shrink:0">🔄</span>
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#0a3d20;line-height:1.3">Hoàn tiền 100%</div>
+        <div style="font-size:12px;color:#888;margin-top:2px;line-height:1.4">Không hiệu quả — hoàn toàn bộ</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;padding:13px 14px;background:#faf8f3;border:1.5px solid #ddd8ce;border-radius:12px">
+      <span style="font-size:26px;flex-shrink:0">✅</span>
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#0a3d20;line-height:1.3">Nhập khẩu chính ngạch</div>
+        <div style="font-size:12px;color:#888;margin-top:2px;line-height:1.4">Có đầy đủ giấy tờ lưu hành</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MINI FORM ═══ -->
+<div style="background:#faf8f3;border-top:1px solid #ddd8ce;border-bottom:1px solid #ddd8ce;padding:20px">
+  <div style="font-size:18px;font-weight:800;color:#0a3d20;margin-bottom:14px;line-height:1.4">📲 Để lại SĐT — Kỹ sư gọi lại trong 15 phút</div>
+  <input type="tel" placeholder="Số điện thoại *" id="miniPhone" style="display:block;width:100%;padding:15px 16px;margin-bottom:12px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;background:#fff;color:#0d1f0e;outline:none">
+  <select id="miniCrop" style="display:block;width:100%;padding:15px 16px;margin-bottom:12px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;background:#fff;color:#0d1f0e;outline:none">
+    <option value="" disabled="" selected="">Loại cây trồng</option>
+    <option>Sầu riêng</option><option>Thanh long</option><option>Bưởi / Cam / Quýt</option><option>Xoài / Nhãn</option><option>Tiêu / Cà phê</option><option>Rau màu ngắn ngày</option><option>Lúa</option><option>Đại lý / Cửa hàng</option>
+  </select>
+  <button id="miniBtn" type="button" onClick="{{ onMiniSubmit }}" style="width:100%;padding:16px;background:linear-gradient(90deg,#7f1d1d,#b91c1c,#ef4444,#b91c1c,#7f1d1d);background-size:300% auto;color:#fff;font-size:17px;font-weight:900;border:none;border-radius:10px;cursor:pointer;letter-spacing:.06em;text-transform:uppercase;animation:shimmerRed 2.8s linear infinite,ringRed 2.2s ease-out infinite">🔥 Nhận báo giá ưu đãi ngay</button>
+</div>
+
+
+
+<!-- ═══ HƯỚNG DẪN SỬ DỤNG ═══ -->
+<div style="background:#0a3d20;padding:24px 20px 26px">
+  <div style="font-size:22px;font-weight:900;color:#c9a84c;text-align:center;margin-bottom:18px">📋 Cách dùng — 3 bước</div>
+  <div style="display:flex;flex-direction:column;gap:0">
+    <div style="display:flex;gap:14px;align-items:flex-start">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0">
+        <div style="width:44px;height:44px;border-radius:50%;background:#c9a84c;display:flex;align-items:center;justify-content:center;font-size:20px">📏</div>
+        <div style="width:2px;height:20px;background:rgba(255,255,255,.15)"></div>
+      </div>
+      <div style="padding-bottom:18px;flex:1">
+        <div style="font-size:16px;font-weight:800;color:#c9a84c;margin-bottom:2px">Pha đúng liều</div>
+        <div style="font-size:15px;color:rgba(255,255,255,.85);line-height:1.55"><strong style="color:#f0dfa0">5ml / 10 lít nước</strong> · khuấy đều là xong</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:flex-start">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0">
+        <div style="width:44px;height:44px;border-radius:50%;background:#c9a84c;display:flex;align-items:center;justify-content:center;font-size:20px">💧</div>
+        <div style="width:2px;height:20px;background:rgba(255,255,255,.15)"></div>
+      </div>
+      <div style="padding-bottom:18px;flex:1">
+        <div style="font-size:16px;font-weight:800;color:#c9a84c;margin-bottom:2px">Tưới gốc hoặc phun lá</div>
+        <div style="font-size:15px;color:rgba(255,255,255,.85);line-height:1.55">Sáng sớm hoặc chiều mát · Phun đều 2 mặt lá</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:flex-start">
+      <div style="flex-shrink:0;width:44px;height:44px;border-radius:50%;background:#c9a84c;display:flex;align-items:center;justify-content:center;font-size:20px">🌱</div>
+      <div style="flex:1;padding-top:10px">
+        <div style="font-size:16px;font-weight:800;color:#c9a84c;margin-bottom:2px">2 lần/tuần — thấy rõ sau 3 ngày</div>
+        <div style="font-size:15px;color:rgba(255,255,255,.85);line-height:1.55">Duy trì đều đặn · Không tưới nắng gắt giữa trưa</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PROOF PHOTOS ═══ -->
+<div id="proof" style="display:flex;align-items:center;gap:10px;padding:24px 20px 14px">
+  <div style="width:4px;height:24px;background:#c9a84c;border-radius:2px;flex-shrink:0"></div>
+  <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Nhà vườn thực tế đã dùng</h2>
+</div>
+<div style="height:1px;background:#ddd8ce;margin:0 20px"></div>
+
+<!-- Video testimonial -->
+<div style="padding:14px 20px 4px">
+  <div style="border-radius:14px;overflow:hidden;border:2px solid #c9a84c;box-shadow:0 4px 18px rgba(0,0,0,.12);position:relative;aspect-ratio:1/1;background:#000">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/fxyyUrHHAmU?rel=0&amp;playsinline=1&amp;modestbranding=1"
+      title="Nhà vườn thực tế dùng LUKE NPK Nhập Mỹ"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen=""
+      style="position:absolute;inset:0;width:100%;height:100%;border:none">
+    </iframe>
+  </div>
+  <div style="display:flex;align-items:center;gap:7px;margin-top:10px;padding:10px 12px;background:#f0fdf4;border-radius:10px;border:1px solid #bbf7d0">
+    <span style="font-size:18px">🎬</span>
+    <div>
+      <div style="font-size:13px;font-weight:800;color:#166534">Nhà vườn thực tế chia sẻ kết quả</div>
+      <div style="font-size:12px;color:#555;margin-top:2px">Sau 14 ngày dùng LUKE NPK Nhập Mỹ</div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:16px 20px 20px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce">
+      <img src="./img/farmer1.png" alt="Anh Văn Quý" style="width:100%;height:200px;object-fit:contain;object-position:center;background:#f4f1eb;display:block">
+      <div style="padding:10px 12px;background:#faf8f3">
+        <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Anh Văn Quý</strong>
+        <span style="font-size:13px;color:#888">Đắk Lắk · Cà phê</span>
+      </div>
+    </div>
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce">
+      <img src="./img/farmer2.png" alt="Chú Trần Hòa" style="width:100%;height:200px;object-fit:contain;object-position:center;background:#f4f1eb;display:block">
+      <div style="padding:10px 12px;background:#faf8f3">
+        <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Chú Trần Hòa</strong>
+        <span style="font-size:13px;color:#888">Đắk Nông · Cà phê</span>
+      </div>
+    </div>
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce">
+      <img src="./img/farmer3.png" alt="Anh Minh Tân" style="width:100%;height:200px;object-fit:contain;object-position:center;background:#f4f1eb;display:block">
+      <div style="padding:10px 12px;background:#faf8f3">
+        <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Anh Minh Tân</strong>
+        <span style="font-size:13px;color:#888">Đà Lạt · Hoa nhà kính</span>
+      </div>
+    </div>
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce">
+      <img src="./img/farmer4.png" alt="Anh Sung" style="width:100%;height:200px;object-fit:contain;object-position:center;background:#f4f1eb;display:block">
+      <div style="padding:10px 12px;background:#faf8f3">
+        <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Anh Sung</strong>
+        <span style="font-size:13px;color:#888">Bình Thuận · Thanh long</span>
+      </div>
+    </div>
+    <!-- Card 5: full width -->
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce;grid-column:1/-1">
+      <img src="./img/farmer5.png" alt="Anh Mạnh Cường" style="width:100%;height:220px;object-fit:contain;object-position:center;background:#f4f1eb;display:block">
+      <div style="padding:10px 14px;background:#faf8f3;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Anh Mạnh Cường</strong>
+          <span style="font-size:13px;color:#888">Đắk Lắk · Ca cao · Cà phê</span>
+        </div>
+        <span style="font-size:12px;background:#0a3d20;color:#c9a84c;padding:4px 10px;border-radius:6px;font-weight:700">Dùng 3 tháng</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ REVIEWS ═══ -->
+<div style="background:#f4f1eb;padding:4px 0 6px">
+  <div style="display:flex;align-items:center;gap:10px;padding:20px 20px 14px">
+    <div style="width:4px;height:24px;background:#c9a84c;border-radius:2px;flex-shrink:0"></div>
+    <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Bà con nói gì sau khi dùng</h2>
+  </div>
+  <div style="height:1px;background:#ddd8ce;margin:0 20px 16px"></div>
+
+  <!-- Review 1 -->
+  <div style="margin:0 20px 12px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <img src="./img/farmer5.png" alt="Chú Mạnh Cường" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top center;flex-shrink:0;border:2px solid #c9a84c">
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Chú Mạnh Cường</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Thạnh Mỹ, Đơn Dương · Rau màu</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 12</div>
+    </div>
+    <div style="display:inline-block;background:#faf8f3;border:1px solid #ddd8ce;color:#0a3d20;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Dùng mấy tháng, đi được mấy lứa cải</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Tưới cái này cây ăn êm, khỏe, bền lực. Đọt mập, lá dày và cứng hơn. Rau cắt xuống để tới chiều vẫn còn tươi. Chai nhỏ vậy chứ cầm lên mới thấy nặng tay thiệt."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Phân Bón MN:</strong> Cảm ơn chú, chúc vườn lứa nào cũng xanh tốt ạ.</div>
+  </div>
+
+  <!-- Review 2 -->
+  <div style="margin:0 20px 12px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <img src="./img/farmer2.png" alt="Chú Trần Hòa" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top center;flex-shrink:0;border:2px solid #c9a84c">
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Chú Trần Hòa</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Bình Thuận · Vườn thanh long</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 8</div>
+    </div>
+    <div style="display:inline-block;background:#faf8f3;border:1px solid #ddd8ce;color:#0a3d20;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">28 trái/gốc · 3 năm rưỡi tuổi</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Tôi tưới theo quy trình 7–14–21–27 ngày thì kết quả tốt như này. 10 trái như 1, thương lái vô vườn mê liền. Kinh phí chỉ bằng một nửa ban đầu mà cây phát triển nhanh hơn."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Phân Bón MN:</strong> Vườn chú năm nay đẹp lắm, cảm ơn chú đã chia sẻ ạ.</div>
+  </div>
+
+  <!-- Review 3 -->
+  <div style="margin:0 20px 12px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <img src="./img/farmer4.png" alt="Anh Sung" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top center;flex-shrink:0;border:2px solid #c9a84c">
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Anh Sung</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Bình Thuận · 7.000 trụ thanh long</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 6</div>
+    </div>
+    <div style="display:inline-block;background:#faf8f3;border:1px solid #ddd8ce;color:#0a3d20;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Nhập nguyên bộ 4 mã cho toàn vườn</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Đất cứng tưới chừng 5 lần là thấy xốp lại, rễ non dễ lên. Vườn đạt mùa quả trong năm dù đã giảm lượng bón xuống so với mọi năm."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Phân Bón MN:</strong> Cảm ơn anh Sung, chúc 7.000 trụ mùa nào cũng bội thu!</div>
+  </div>
+
+  <!-- Review 4 -->
+  <div style="margin:0 20px 6px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <img src="./img/farmer1.png" alt="Chú nông dân Đà Lạt" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top center;flex-shrink:0;border:2px solid #c9a84c">
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Chú nông dân Đà Lạt</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Đà Lạt · Xà lách, rau màu</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 5</div>
+    </div>
+    <div style="display:inline-block;background:#faf8f3;border:1px solid #ddd8ce;color:#0a3d20;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Từ héo rạp → đứng thẳng chỉ 3 ngày</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Hồi trước nó héo, rạp dưới đất luôn. Dùng NPK nhập Mỹ này thấm nhanh, hấp thụ liền. Thường 5 ngày mới phát triển được vậy, mà giờ 3 ngày thôi."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Phân Bón MN:</strong> Cảm ơn chú, chúc vườn lứa nào cũng xanh tốt!</div>
+  </div>
+</div>
+
+<!-- ═══ FAQ ═══ -->
+<div style="background:#faf8f3;border-top:1px solid #ddd8ce;padding:24px 20px 26px">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+    <div style="width:4px;height:24px;background:#c9a84c;border-radius:2px;flex-shrink:0"></div>
+    <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Câu hỏi thường gặp</h2>
+  </div>
+  <div style="height:1px;background:#ddd8ce;margin-bottom:16px"></div>
+  <div style="display:flex;flex-direction:column;gap:10px">
+
+    <details style="background:#fff;border:1.5px solid #ddd8ce;border-radius:12px;overflow:hidden">
+      <summary style="padding:15px 16px;font-size:16px;font-weight:700;color:#0a3d20;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px">
+        Bao lâu thì thấy hiệu quả?
+        <span style="font-size:18px;color:#c9a84c;flex-shrink:0;line-height:1">＋</span>
+      </summary>
+      <div style="padding:0 16px 15px;font-size:15px;color:#555;line-height:1.7;border-top:1px solid #ebe7e0;padding-top:12px">Thường thấy rễ non nhú và đất xốp hơn chỉ sau <strong style="color:#0a3d20">3 ngày</strong> đầu tiên. Đọt bung đồng loạt sau 7 ngày, lá dày xanh bền sau 14 ngày. Với vườn đất đã chai cứng lâu năm, có thể tưới lặp lại lần 2 sau 7 ngày để thấy rõ hơn.</div>
+    </details>
+
+    <details style="background:#fff;border:1.5px solid #ddd8ce;border-radius:12px;overflow:hidden">
+      <summary style="padding:15px 16px;font-size:16px;font-weight:700;color:#0a3d20;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px">
+        Dùng được cho những cây trồng nào?
+        <span style="font-size:18px;color:#c9a84c;flex-shrink:0;line-height:1">＋</span>
+      </summary>
+      <div style="padding:0 16px 15px;font-size:15px;color:#555;line-height:1.7;border-top:1px solid #ebe7e0;padding-top:12px">Phù hợp với <strong style="color:#0a3d20">tất cả cây trồng</strong>: sầu riêng, thanh long, cam/bưởi, xoài, nhãn, tiêu, cà phê, lúa, rau màu ngắn ngày và cây hoa kiểng. Kỹ sư sẽ tư vấn chọn đúng mã NPK theo giai đoạn phát triển của cây bạn.</div>
+    </details>
+
+    <details style="background:#fff;border:1.5px solid #ddd8ce;border-radius:12px;overflow:hidden">
+      <summary style="padding:15px 16px;font-size:16px;font-weight:700;color:#0a3d20;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px">
+        Có giao hàng tận nơi và COD không?
+        <span style="font-size:18px;color:#c9a84c;flex-shrink:0;line-height:1">＋</span>
+      </summary>
+      <div style="padding:0 16px 15px;font-size:15px;color:#555;line-height:1.7;border-top:1px solid #ebe7e0;padding-top:12px">Có. Chúng tôi <strong style="color:#0a3d20">freeship toàn quốc</strong>, giao tận nhà. Bà con nhận hàng, kiểm tra sản phẩm trước rồi mới thanh toán (COD) — không lo rủi ro mua online.</div>
+    </details>
+
+    <details style="background:#fff;border:1.5px solid #ddd8ce;border-radius:12px;overflow:hidden">
+      <summary style="padding:15px 16px;font-size:16px;font-weight:700;color:#0a3d20;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px">
+        Nếu không hiệu quả thì sao?
+        <span style="font-size:18px;color:#c9a84c;flex-shrink:0;line-height:1">＋</span>
+      </summary>
+      <div style="padding:0 16px 15px;font-size:15px;color:#555;line-height:1.7;border-top:1px solid #ebe7e0;padding-top:12px">Cam kết <strong style="color:#b91c1c">hoàn tiền 100%</strong> nếu dùng đúng hướng dẫn mà không thấy kết quả. Bà con liên hệ lại qua Zalo 0876 186 796, kỹ sư xử lý trong vòng 24 giờ — không hỏi thêm lý do.</div>
+    </details>
+
+    <details style="background:#fff;border:1.5px solid #ddd8ce;border-radius:12px;overflow:hidden">
+      <summary style="padding:15px 16px;font-size:16px;font-weight:700;color:#0a3d20;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px">
+        Đặt hàng như thế nào?
+        <span style="font-size:18px;color:#c9a84c;flex-shrink:0;line-height:1">＋</span>
+      </summary>
+      <div style="padding:0 16px 15px;font-size:15px;color:#555;line-height:1.7;border-top:1px solid #ebe7e0;padding-top:12px">Bà con điền số điện thoại và loại cây vào form bên dưới — <strong style="color:#0a3d20">kỹ sư gọi lại trong 15 phút</strong>, tư vấn miễn phí và chốt đơn. Hoặc gọi thẳng 0876 186 796 để được hỗ trợ ngay.</div>
+    </details>
+
+  </div>
+</div>
+
+<!-- ═══ MAIN FORM ═══ -->
+<div id="form" style="background:#b91c1c;padding:0;border-top:5px solid #b91c1c">
+  <!-- Header -->
+  <div style="padding:22px 20px 38px">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:13px;font-weight:700;padding:6px 13px;border-radius:20px;margin-bottom:14px">
+      <span style="display:inline-block;width:7px;height:7px;background:#fde68a;border-radius:50%;flex-shrink:0;animation:blink 1.4s ease-in-out infinite"></span>
+      Còn {{ stock }}/100 suất ưu đãi hôm nay
+    </div>
+    <h2 style="font-size:26px;font-weight:900;color:#fff;line-height:1.35;margin-bottom:8px;text-wrap:pretty">Đăng ký để kỹ sư gọi lại trong <span style="color:#fde68a">15 phút</span></h2>
+    <p style="font-size:14px;color:rgba(255,255,255,.75);line-height:1.5">Tư vấn miễn phí · Không ràng buộc · COD toàn quốc</p>
+  </div>
+  <!-- Form card nổi lên chồng header -->
+  <div style="background:#faf5ea;border-radius:20px 20px 0 0;margin-top:-20px;padding:24px 20px 0">
+    <input type="text" placeholder="Họ và tên" style="display:block;width:100%;padding:16px 18px;margin-bottom:12px;border:2px solid #e5e7eb;border-radius:12px;font-size:17px;background:#f9fafb;color:#111;outline:none;box-sizing:border-box">
+    <input type="tel" placeholder="Số điện thoại *" style="display:block;width:100%;padding:16px 18px;margin-bottom:18px;border:2px solid #0a3d20;border-radius:12px;font-size:17px;background:#f9fafb;color:#111;outline:none;box-sizing:border-box">
+    <!-- Combo chọn -->
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
+      <label style="display:flex;align-items:center;gap:14px;padding:16px;background:#fefce8;border:2px solid #c9a84c;border-radius:12px;cursor:pointer">
+        <input type="radio" name="opt" value="1" defaultChecked="{{ true }}" style="width:20px;height:20px;accent-color:#b91c1c;flex-shrink:0">
+        <div>
+          <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.3">Mua 3 tặng 1 — combo tốt nhất</div>
+          <div style="font-size:14px;color:#b91c1c;font-weight:700;margin-top:3px">Chỉ 804.000₫ nhận 4 chai · Freeship</div>
+        </div>
+      </label>
+      <label style="display:flex;align-items:center;gap:14px;padding:16px;background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;cursor:pointer">
+        <input type="radio" name="opt" value="3" style="width:20px;height:20px;accent-color:#b91c1c;flex-shrink:0">
+        <div>
+          <div style="font-size:16px;font-weight:700;color:#111;line-height:1.3">Tư vấn mã phù hợp với cây của tôi</div>
+          <div style="font-size:14px;color:#888;margin-top:3px">Kỹ sư gọi tư vấn miễn phí</div>
+        </div>
+      </label>
+    </div>
+    <!-- Trust badges -->
+    <div style="display:flex;justify-content:space-around;margin-bottom:18px;padding:14px;background:#f0fdf4;border-radius:12px;border:1.5px solid #bbf7d0">
+      <div style="text-align:center">
+        <div style="font-size:20px;margin-bottom:4px">🔒</div>
+        <div style="font-size:11px;color:#166534;font-weight:700">Bảo mật<br>thông tin</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:20px;margin-bottom:4px">💯</div>
+        <div style="font-size:11px;color:#166534;font-weight:700">Hoàn tiền<br>100%</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:20px;margin-bottom:4px">🚚</div>
+        <div style="font-size:11px;color:#166534;font-weight:700">Freeship<br>toàn quốc</div>
+      </div>
+    </div>
+    <!-- CTA -->
+    <button id="mainBtn" type="button" onClick="{{ onMainSubmit }}" style="width:100%;padding:20px;background:linear-gradient(90deg,#9a7530,#c9a84c,#f0d070,#e0b84a,#9a7530);background-size:300% auto;color:#0a3d20;font-size:20px;font-weight:900;border:none;border-radius:14px;cursor:pointer;letter-spacing:.05em;text-transform:uppercase;animation:shimmerGold 2.8s linear infinite;box-shadow:0 6px 24px rgba(201,168,76,.4)">NHẬN BÁO GIÁ NGAY</button>
+    <p style="font-size:12px;color:#bbb;text-align:center;margin-top:12px;padding-bottom:24px;line-height:1.6">Hiệu quả có thể thay đổi tùy điều kiện đất đai và cách chăm sóc</p>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<div style="background:#0a3d20;padding:22px 20px;border-top:3px solid #c9a84c">
+  <div style="font-size:14px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px;line-height:1.5">Công ty Cổ phần Nông nghiệp Agrizen<br>Đơn vị phân phối: Phân Bón MN</div>
+  <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">📞</span>
+    <p style="font-size:15px;color:rgba(255,255,255,.75)"><a href="tel:0876186796" style="color:rgba(255,255,255,.75);text-decoration:none">0876 186 796</a></p>
+  </div>
+  <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">🌐</span>
+    <p style="font-size:15px;color:rgba(255,255,255,.75)">www.nongnghiepsachvn.net</p>
+  </div>
+  <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">📍</span>
+    <p style="font-size:15px;color:rgba(255,255,255,.75);line-height:1.5">Số 70–72 Song Hành, P. Bình Trưng, TP. Hồ Chí Minh</p>
+  </div>
+  <div style="display:flex;gap:10px;margin-bottom:18px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">💬</span>
+    <p style="font-size:15px;color:rgba(255,255,255,.75)">Zalo chính hãng: <a href="tel:0876186796" style="color:rgba(255,255,255,.75);text-decoration:none">0876 186 796</a></p>
+  </div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:14px;border-top:1px solid rgba(255,255,255,.15)">
+    <a href="https://www.nongnghiepsachvn.net/chinh-sach-thanh-toan" target="_blank" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:underline">Chính sách thanh toán</a>
+    <a href="https://www.nongnghiepsachvn.net/chinh-sach-bao-mat" target="_blank" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:underline">Chính sách bảo mật</a>
+    <a href="https://www.nongnghiepsachvn.net/chinh-sach-doi-tra" target="_blank" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:underline">Đổi trả hàng</a>
+  </div>
+  <div style="font-size:11px;color:rgba(255,255,255,.3);margin-top:12px">© 2026 Agrizen · Phân Bón MN. Bảo lưu mọi quyền.</div>
+</div>
+
+<!-- ═══ STICKY BAR ═══ -->
+<div style="position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:460px;z-index:400;background:#0a3d20;border-top:3px solid #c9a84c;box-shadow:0 -2px 12px rgba(0,0,0,.25)">
+  <div style="display:flex;align-items:center;gap:8px;padding:10px 14px">
+    <a href="tel:0876186796" style="font-size:28px;text-decoration:none;flex-shrink:0">📞</a>
+    <input type="tel" placeholder="SĐT — Kỹ sư gọi lại 15 phút" style="flex:1;padding:11px 14px;border:1.5px solid rgba(255,255,255,.25);border-radius:8px;background:rgba(255,255,255,.1);color:#fff;font-size:15px;outline:none;caret-color:#fff">
+    <button id="stickyBtn" type="button" onClick="{{ onStickySubmit }}" style="background:linear-gradient(90deg,#9a7530,#c9a84c,#f0d070,#c9a84c,#9a7530);background-size:300% auto;color:#0a3d20;padding:11px 16px;border-radius:8px;font-size:14px;font-weight:900;border:none;cursor:pointer;white-space:nowrap;letter-spacing:.04em;text-transform:uppercase;animation:shimmerGold 2.8s linear infinite">✨ Báo giá ngay</button>
+  </div>
+</div>
+
+<!-- ═══ POPUP ═══ -->
+<sc-if value="{{ showPopup }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closePopup }}" style="position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:500;display:flex;align-items:center;justify-content:center;padding:20px">
+    <div onClick="{{ stopPropagation }}" style="background:#fff;border-radius:16px;width:360px;max-width:100%;position:relative;animation:popIn .3s ease">
+      <!-- Close -->
+      <button onClick="{{ closePopup }}" style="position:absolute;top:12px;right:14px;font-size:22px;line-height:1;cursor:pointer;color:#bbb;background:none;border:none;font-weight:700;z-index:1">×</button>
+      <!-- ── BLOCK 1: Header xanh đậm ── -->
+      <div style="background:#0a3d20;padding:22px 24px 20px;border-radius:16px 16px 0 0">
+        <div style="font-size:12px;font-weight:800;color:#c9a84c;letter-spacing:.08em;margin-bottom:10px">🔥 ƯU ĐÃI ĐẶC BIỆT HÔM NAY</div>
+        <div style="font-size:40px;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-.01em;margin-bottom:6px">Mua 3 Tặng 1</div>
+        <div style="font-size:15px;color:rgba(255,255,255,.75);line-height:1.5">Chỉ <strong style="color:#c9a84c;font-size:18px;font-weight:900">804K</strong> nhận 4 chai · Freeship · COD</div>
+      </div>
+      <!-- ── BLOCK 2: Form trắng ── -->
+      <div style="background:#faf5ea;padding:20px 24px 22px;border-radius:0 0 16px 16px">
+        <!-- Mini social proof -->
+        <div style="display:flex;align-items:center;gap:8px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:10px 12px;margin-bottom:14px">
+          <div style="display:flex;gap:-4px">
+            <img src="./img/farmer5.png" style="width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid #fff;flex-shrink:0">
+            <img src="./img/farmer2.png" style="width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid #fff;flex-shrink:0;margin-left:-8px">
+            <img src="./img/farmer4.png" style="width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid #fff;flex-shrink:0;margin-left:-8px">
+          </div>
+          <div style="font-size:12px;color:#166534;font-weight:700;line-height:1.4">3.200+ nhà vườn đã đặt · <span style="color:#d97706">★★★★★</span> 4.9</div>
+        </div>
+        <div style="font-size:15px;color:#333;font-weight:700;margin-bottom:12px">Kỹ sư gọi xác nhận đơn trong <span style="color:#b91c1c;font-weight:900">15 phút</span></div>
+        <input type="tel" placeholder="Số điện thoại của bạn" style="display:block;width:100%;padding:15px 16px;border:2px solid #0a3d20;border-radius:10px;font-size:17px;color:#0d1f0e;outline:none;margin-bottom:12px;background:#fff;box-sizing:border-box">
+        <button id="popupBtn" onClick="{{ onPopupSubmit }}" style="width:100%;background:linear-gradient(90deg,#9a7530,#c9a84c,#f0d070,#e0b84a,#9a7530);background-size:300% auto;color:#0a3d20;padding:17px;border-radius:10px;font-size:15px;font-weight:900;border:none;cursor:pointer;letter-spacing:.02em;text-transform:uppercase;animation:shimmerGold 2.8s linear infinite;box-shadow:0 4px 18px rgba(201,168,76,.35);white-space:nowrap">ĐẶT NGAY — COMBO 3 TẶNG 1</button>
+        <!-- Trust row -->
+        <div style="display:flex;justify-content:space-around;margin-top:14px">
+          <div style="text-align:center;font-size:12px;color:#666;font-weight:600">🚚 Freeship</div>
+          <div style="text-align:center;font-size:12px;color:#666;font-weight:600">💵 COD</div>
+          <div style="text-align:center;font-size:12px;color:#666;font-weight:600">💯 Hoàn tiền</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 460, &quot;height&quot;: 900 }
+}">
+
+class Component extends DCLogic {
+  state = {
+    seconds: 23 * 3600 + 59 * 59,
+    stock: 22,
+    activeSlide: 0,
+    selectedCrop: null,
+    selectedSym: null,
+    showPopup: false
+  };
+
+  componentDidMount() {
+    // Countdown timer
+    this._cTimer = setInterval(() => {
+      this.setState(s => ({ seconds: Math.max(0, s.seconds - 1) }));
+    }, 1000);
+
+    // Stock slowly decreases
+    this._sTimer = setInterval(() => {
+      this.setState(s => {
+        if (Math.random() < 0.07 && s.stock > 4) return { stock: s.stock - 1 };
+        return null;
+      });
+    }, 10000);
+
+    // Popup after 6s
+    this._pTimer = setTimeout(() => this.setState({ showPopup: true }), 6000);
+
+    // Carousel scroll → update dots
+    const car = document.getElementById('carousel');
+    if (car) {
+      this._paused = false;
+
+      this._scrollFn = () => {
+        const card = car.querySelector('[data-card="1"]');
+        if (!card) return;
+        const w = card.offsetWidth + 12;
+        const i = Math.min(3, Math.round(car.scrollLeft / w));
+        this._updateDots(i);
+        if (i !== this.state.activeSlide) this.setState({ activeSlide: i });
+      };
+      car.addEventListener('scroll', this._scrollFn, { passive: true });
+
+      // Pause on touch / mouse, resume after release
+      const pause = () => { this._paused = true; clearTimeout(this._resumeT); };
+      const resume = () => { this._resumeT = setTimeout(() => { this._paused = false; }, 1200); };
+      car.addEventListener('touchstart', pause, { passive: true });
+      car.addEventListener('touchend', resume, { passive: true });
+      car.addEventListener('mousedown', pause, { passive: true });
+      car.addEventListener('mouseup', resume, { passive: true });
+      this._pauseFn = pause;
+      this._resumeFn = resume;
+
+      // Auto-scroll every 3.5s
+      this._autoTimer = setInterval(() => {
+        if (this._paused) return;
+        const next = ((this.state.activeSlide) + 1) % 4;
+        this.scrollToSlide(next);
+      }, 3500);
+    }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this._cTimer);
+    clearInterval(this._sTimer);
+    clearTimeout(this._pTimer);
+    clearInterval(this._autoTimer);
+    clearTimeout(this._resumeT);
+    const car = document.getElementById('carousel');
+    if (car && this._scrollFn) car.removeEventListener('scroll', this._scrollFn);
+    if (car && this._pauseFn) car.removeEventListener('touchstart', this._pauseFn);
+    if (car && this._pauseFn) car.removeEventListener('mousedown', this._pauseFn);
+    if (car && this._resumeFn) car.removeEventListener('touchend', this._resumeFn);
+    if (car && this._resumeFn) car.removeEventListener('mouseup', this._resumeFn);
+  }
+
+  _updateDots(i) {
+    document.querySelectorAll('[data-dot]').forEach((d, j) => {
+      d.style.background = j === i ? '#0a3d20' : '#ddd8ce';
+      d.style.width = j === i ? '28px' : '10px';
+      d.style.borderRadius = j === i ? '5px' : '50%';
+    });
+  }
+
+  scrollToSlide(i) {
+    const car = document.getElementById('carousel');
+    const card = car && car.querySelector('[data-card="1"]');
+    if (!card) return;
+    car.scrollTo({ left: i * (card.offsetWidth + 12), behavior: 'smooth' });
+    this._updateDots(i);
+    this.setState({ activeSlide: i });
+  }
+
+  selectCrop(crop, idx) {
+    this.setState({ selectedCrop: crop });
+    document.querySelectorAll('[data-crop-btn]').forEach((btn, j) => {
+      const active = j === idx;
+      btn.style.background = active ? '#0a3d20' : '#f0ede6';
+      btn.style.color = active ? '#c9a84c' : '#0a3d20';
+      btn.style.borderColor = active ? '#c9a84c' : '#ddd8ce';
+      btn.style.transform = active ? 'scale(1.04)' : 'scale(1)';
+    });
+  }
+
+  selectSym(name, idx) {
+    this.setState({ selectedSym: name });
+    document.querySelectorAll('[data-sym-btn]').forEach((btn, j) => {
+      const active = j === idx;
+      btn.style.background = active ? '#0a3d20' : '#fff';
+      btn.style.borderColor = active ? '#c9a84c' : '#ddd8ce';
+      btn.style.transform = active ? 'scale(1.03)' : 'scale(1)';
+    });
+  }
+
+  submitDone(id, msg) {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    btn.textContent = msg;
+    btn.style.background = '#166534';
+    btn.style.animation = 'none';
+    btn.style.fontSize = '15px';
+    btn.disabled = true;
+  }
+
+  renderVals() {
+    const { seconds, stock, selectedCrop, selectedSym, showPopup } = this.state;
+    const h = String(Math.floor(seconds / 3600)).padStart(2, '0');
+    const m = String(Math.floor(seconds % 3600 / 60)).padStart(2, '0');
+    const s = String(seconds % 60).padStart(2, '0');
+
+    const tips = {
+      'Sầu riêng':   'Bung đọt dùng 30-10-10 → Kéo mắc cua dùng 10-55-10 → Nuôi trái ngọt dùng 10-0-30',
+      'Thanh long':  'Phục hồi sau thu dùng 30-10-10 → Kéo mắc cua dùng 10-55-10 → Vào cơm bóng đẹp dùng 10-0-30',
+      'Cam/Bưởi':   'Dưỡng lá định kỳ dùng 20-20-20 → Kích bông dùng 10-55-10 → Nuôi trái mọng dùng 10-0-30',
+      'Xoài/Nhãn':  'Kích đọt dùng 30-10-10 → Ra hoa đồng loạt dùng 10-55-10 → Trái ngọt thơm dùng 10-0-30',
+      'Tiêu/Cà phê':'Sau mưa kích trưởng dùng 30-10-10 → Dưỡng cành lá dùng 20-20-20 → Vào hạt chắc dùng 10-0-30',
+      'Rau màu':     'Kích đọt nhanh dùng 30-10-10 → Dưỡng đều xanh dùng 20-20-20 → Thu hoạch tươi lâu hơn hẳn',
+      'Lúa':         'Đẻ nhánh mạnh dùng 30-10-10 → Trỗ đòng đều dùng 20-20-20 → Vào hạt chắc mẩy dùng 10-0-30'
+    };
+
+    const symTips = {
+      'Vàng Lá':          'Thiếu đạm + vi lượng. Dùng 20-20-20 pha 1ml/lít tưới gốc + phun lá đều 2 mặt. Sau 5–7 ngày lá xanh đậm bền trở lại, không vàng tái phát.',
+      'Đọt Không Ra':     'Thiếu lân kích thích phân hoá mầm. Dùng 10-55-10 pha 1ml/lít tưới gốc + phun đọt non. Chỉ 7 ngày đọt bung đều, cây tăng trưởng mạnh.',
+      'Rễ Kém / Đất Chai':'Thiếu hữu cơ + vi sinh. Dùng 30-10-10 (hữu cơ 70%) tưới gốc 2 lần/tuần. Sau 3 ngày đất xốp hơn, rễ non nhú rõ, nước thấm đều.',
+      'Cây Ốm Yếu':       'Thiếu kali + vi lượng tổng hợp. Dùng 10-0-30 pha 1ml/lít tưới đều. Sau 14 ngày cành cứng, lá dày bóng, thân to khoẻ hẳn.'
+    };
+
+    return {
+      countdown: `${h}:${m}:${s}`,
+      selectedSym: selectedSym || '',
+      hasSymRec: !!selectedSym,
+      symRec: selectedSym ? symTips[selectedSym] : '',
+      onSym0: () => this.selectSym('Vàng Lá', 0),
+      onSym1: () => this.selectSym('Đọt Không Ra', 1),
+      onSym2: () => this.selectSym('Rễ Kém / Đất Chai', 2),
+      onSym3: () => this.selectSym('Cây Ốm Yếu', 3),
+      stock,
+      selectedCrop: selectedCrop || '',
+      hasCropRec: !!selectedCrop,
+      cropRecTip: selectedCrop ? tips[selectedCrop] : '',
+      showPopup,
+      onCrop0: () => this.selectCrop('Sầu riêng', 0),
+      onCrop1: () => this.selectCrop('Thanh long', 1),
+      onCrop2: () => this.selectCrop('Cam/Bưởi', 2),
+      onCrop3: () => this.selectCrop('Xoài/Nhãn', 3),
+      onCrop4: () => this.selectCrop('Tiêu/Cà phê', 4),
+      onCrop5: () => this.selectCrop('Rau màu', 5),
+      onCrop6: () => this.selectCrop('Lúa', 6),
+      onDot0: () => this.scrollToSlide(0),
+      onDot1: () => this.scrollToSlide(1),
+      onDot2: () => this.scrollToSlide(2),
+      onDot3: () => this.scrollToSlide(3),
+      onPlayVideo: () => {
+        const facade = document.getElementById('yt-facade');
+        if (!facade) return;
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/fxyyUrHHAmU?rel=0&playsinline=1&autoplay=1&modestbranding=1';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none';
+        facade.innerHTML = '';
+        facade.appendChild(iframe);
+        facade.style.cursor = 'default';
+      },
+      onOpenPopup: () => this.setState({ showPopup: true }),
+      closePopup: () => this.setState({ showPopup: false }),
+      stopPropagation: (e) => e && e.stopPropagation(),
+      onMainSubmit: () => this.submitDone('mainBtn', '✅ Đã nhận — Kỹ sư gọi lại trong 15 phút'),
+      onMiniSubmit: () => this.submitDone('miniBtn', '✅ Đã gửi — Kỹ sư liên hệ ngay'),
+      onStickySubmit: () => this.submitDone('stickyBtn', '✅ Đã nhận!'),
+      onPopupSubmit: () => {
+        this.submitDone('popupBtn', '✅ Đã đăng ký!');
+        setTimeout(() => this.setState({ showPopup: false }), 1500);
+      }
+    };
+  }
+}
+
+</script>
+</body>
+</html>

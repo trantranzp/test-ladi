@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>JAPA VIL 110SC – Trị Nấm Bệnh Cây Dừa & Cây Ăn Trái</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Be Vietnam Pro',sans-serif;background:#fff;max-width:460px;margin:0 auto;color:#0d1a0e;overflow-x:hidden;padding-bottom:96px;-webkit-font-smoothing:antialiased}
+    input,select,button,textarea{font-family:'Be Vietnam Pro',sans-serif}
+    input[type=radio]{accent-color:#0a3d20;width:20px;height:20px;flex-shrink:0}
+    @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(245,158,11,0)}50%{box-shadow:0 0 0 12px rgba(245,158,11,.3)}}
+    @keyframes popIn{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+    @keyframes fadeSlide{0%{opacity:0;transform:translateY(-8px)}100%{opacity:1;transform:translateY(0)}}
+    @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.5}}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+  </style>
+</helmet>
+
+<!-- ═══ TOPBAR ═══ -->
+<div style="position:sticky;top:0;z-index:300;background:#0a3d20;display:flex;align-items:center;justify-content:space-between;padding:13px 16px;gap:10px;border-bottom:3px solid #f59e0b;box-shadow:0 2px 10px rgba(0,0,0,.35)">
+  <div style="color:#fff;line-height:1.3">
+    <div style="font-size:19px;font-weight:900;letter-spacing:.04em">JAPA VIL 110SC</div>
+    <div style="font-size:12px;color:rgba(255,255,255,.6);font-weight:500;margin-top:1px">Trị Nấm Bệnh · Cây Dừa &amp; Cây Ăn Trái</div>
+  </div>
+  <a href="tel:0876186796" style="background:#f59e0b;color:#0a3d20;padding:12px 18px;border-radius:10px;font-size:16px;font-weight:800;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:6px">📞 Gọi ngay</a>
+</div>
+
+<!-- ═══ TRUST TICKER ═══ -->
+<div style="background:#fef3c7;border-bottom:2px solid #f59e0b;overflow:hidden;padding:10px 0">
+  <div style="display:inline-flex;align-items:center;animation:ticker 24s linear infinite;white-space:nowrap">
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">⭐ 4.8/5 · 1.200+ đánh giá</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">🚀 Đã bán 12.000+ chai</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">💯 Cam kết 3 KHÔNG</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">🚚 Freeship toàn quốc</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">📦 COD – nhận hàng rồi mới trả tiền</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">✅ Mã lưu hành Cục BVTV đầy đủ</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <!-- duplicate -->
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">⭐ 4.8/5 · 1.200+ đánh giá</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">🚀 Đã bán 12.000+ chai</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">💯 Cam kết 3 KHÔNG</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">🚚 Freeship toàn quốc</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">📦 COD – nhận hàng rồi mới trả tiền</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+    <span style="font-size:13px;font-weight:700;color:#78350f;padding:0 18px">✅ Mã lưu hành Cục BVTV đầy đủ</span>
+    <span style="color:#f59e0b;font-size:18px;font-weight:900">·</span>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<div style="background:linear-gradient(160deg,#0a3d20 0%,#1e6b40 100%);padding:28px 20px 44px;position:relative;overflow:hidden">
+  <div style="position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#fff;clip-path:ellipse(55% 100% at 50% 100%)"></div>
+  <!-- Product badge -->
+  <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(245,158,11,.18);border:1px solid rgba(245,158,11,.5);color:#fcd34d;font-size:12px;font-weight:700;letter-spacing:.06em;padding:6px 14px;border-radius:5px;margin-bottom:18px">🌿 JAPA VIL 110SC · Thuốc Trị Nấm Chuyên Biệt</div>
+  <!-- Pain hook -->
+  <div style="background:rgba(185,28,28,.16);border-left:4px solid #ef4444;padding:13px 16px;border-radius:0 10px 10px 0;margin-bottom:20px">
+    <div style="font-size:17px;color:rgba(255,255,255,.92);line-height:1.6;font-style:italic">Cây dừa bị thúi đọt, phấn trắng, cháy lá? Phun hoài không khỏi, tốn tiền mà cây càng yếu?</div>
+  </div>
+  <!-- Main headline -->
+  <h1 style="font-size:30px;font-weight:900;color:#fff;line-height:1.15;margin-bottom:8px">Phun 2 lần là khỏi</h1>
+  <div style="font-size:40px;font-weight:900;color:#f59e0b;line-height:1.05;margin-bottom:10px;letter-spacing:-.02em">Trị Tận Gốc</div>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+    <span style="background:rgba(239,68,68,.18);border:1px solid rgba(239,68,68,.4);color:#fca5a5;font-size:14px;font-weight:700;padding:6px 14px;border-radius:20px">🍃 Phấn Trắng</span>
+    <span style="background:rgba(239,68,68,.18);border:1px solid rgba(239,68,68,.4);color:#fca5a5;font-size:14px;font-weight:700;padding:6px 14px;border-radius:20px">🌿 Thúi Đọt</span>
+    <span style="background:rgba(239,68,68,.18);border:1px solid rgba(239,68,68,.4);color:#fca5a5;font-size:14px;font-weight:700;padding:6px 14px;border-radius:20px">🍂 Nấm Bẹ</span>
+    <span style="background:rgba(239,68,68,.18);border:1px solid rgba(239,68,68,.4);color:#fca5a5;font-size:14px;font-weight:700;padding:6px 14px;border-radius:20px">🔥 Đốm/Cháy Lá</span>
+  </div>
+  <!-- Product image + price -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;background:rgba(255,255,255,.08);border-radius:14px;padding:16px">
+    <img src="https://static.ladipage.net/686379003867c30012c85c40/tai-xuong-1-20260617102810-mpwkq.png" alt="JAPA VIL 110SC" style="width:90px;height:90px;object-fit:contain;flex-shrink:0;border-radius:10px;background:rgba(255,255,255,.12)">
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.55);text-decoration:line-through;font-weight:500">130.000₫</div>
+      <div style="font-size:40px;font-weight:900;color:#f59e0b;line-height:1;letter-spacing:-.02em">97.500₫</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.75);margin-top:4px">/ chai 250ml · Giảm 25%</div>
+      <div style="margin-top:8px;display:inline-flex;align-items:center;gap:6px;background:rgba(245,158,11,.2);border:1px solid rgba(245,158,11,.4);padding:5px 12px;border-radius:6px">
+        <span style="color:#fcd34d;font-size:13px;font-weight:700">🎁 Mua 3 tặng 1 — chỉ 67.500₫/chai</span>
+      </div>
+    </div>
+  </div>
+  <!-- CTAs -->
+  <div style="display:flex;gap:10px">
+    <a href="#combo" style="flex:1;background:#f59e0b;color:#0a3d20;padding:16px;border-radius:12px;font-size:18px;font-weight:800;text-align:center;text-decoration:none;letter-spacing:.02em;animation:glow 2s ease-in-out infinite">Đặt ngay — COD</a>
+    <a href="#benh" style="padding:16px 18px;border-radius:12px;font-size:15px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none;border:1.5px solid rgba(255,255,255,.35);white-space:nowrap">Xem thực tế ↓</a>
+  </div>
+</div>
+
+<!-- ═══ URGENCY ═══ -->
+<div style="background:#b91c1c;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+  <div>
+    <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.8);margin-bottom:4px;letter-spacing:.04em">⏰ ƯU ĐÃI MUA 3 TẶNG 1 KẾT THÚC SAU</div>
+    <div style="font-size:32px;font-weight:900;letter-spacing:5px;color:#fff;line-height:1;animation:blink 2s ease-in-out infinite">{{ countdown }}</div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:14px;color:rgba(255,255,255,.85);margin-bottom:6px;font-weight:600">Còn <span style="color:#fcd34d;font-size:18px;font-weight:900">{{ stock }}</span>/80 suất</div>
+    <div style="background:rgba(255,255,255,.2);border-radius:20px;height:10px;width:110px;overflow:hidden">
+      <div style="height:100%;background:#f59e0b;border-radius:20px;width:{{ stockPct }}%;transition:width .5s"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DISEASE SELECTOR (BẤM NGAY BỆNH CỦA CÂY) ═══ -->
+<div id="benh" style="background:#faf8f3;padding:22px 20px 20px;border-bottom:2px solid #ddd8ce">
+  <div style="font-size:21px;font-weight:900;color:#0a3d20;margin-bottom:5px">🔍 Cây của bà con đang bị gì?</div>
+  <div style="font-size:16px;color:#666;margin-bottom:18px;line-height:1.4">Bấm vào triệu chứng → Xem cách xử lý ngay</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <!-- Disease 1 -->
+    <button data-disease-btn="0" type="button" onClick="{{ onDisease0 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🍃</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Phấn Trắng</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Lá phủ bột trắng, lá non bị cuốn lại</div>
+    </button>
+    <!-- Disease 2 -->
+    <button data-disease-btn="1" type="button" onClick="{{ onDisease1 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🌿</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Thúi Đọt</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Đọt non bị thúi, nước chảy ra có mùi</div>
+    </button>
+    <!-- Disease 3 -->
+    <button data-disease-btn="2" type="button" onClick="{{ onDisease2 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🍂</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Nấm Bẹ</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Bẹ lá bị nấm, úa vàng lan rộng</div>
+    </button>
+    <!-- Disease 4 -->
+    <button data-disease-btn="3" type="button" onClick="{{ onDisease3 }}" style="background:#fff;border:2px solid #ddd8ce;border-radius:14px;padding:16px 12px;cursor:pointer;text-align:left;transition:all .15s">
+      <div style="font-size:30px;margin-bottom:8px">🔥</div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;line-height:1.2;margin-bottom:5px">Đốm / Cháy Lá</div>
+      <div style="font-size:13px;color:#888;line-height:1.45">Lá xuất hiện đốm nâu, viền vàng, khô dần</div>
+    </button>
+  </div>
+  <!-- Recommendation box -->
+  <sc-if value="{{ hasDiseaseRec }}" hint-placeholder-val="{{ false }}">
+    <div style="margin-top:14px;background:linear-gradient(135deg,#0a3d20,#1a6b3a);border-radius:14px;padding:16px 18px;animation:fadeSlide .3s ease">
+      <div style="font-size:15px;font-weight:800;color:#f59e0b;margin-bottom:7px">💡 {{ selectedDisease }} — Cách xử lý:</div>
+      <div style="font-size:15px;color:rgba(255,255,255,.92);line-height:1.65">{{ diseaseRec }}</div>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <a href="#combo" style="flex:1;background:#f59e0b;color:#0a3d20;padding:11px;border-radius:8px;font-size:15px;font-weight:800;text-decoration:none;text-align:center">Đặt ngay →</a>
+        <a href="tel:0876186796" style="padding:11px 14px;border-radius:8px;font-size:15px;font-weight:700;color:rgba(255,255,255,.85);text-decoration:none;border:1.5px solid rgba(255,255,255,.3)">Hỏi kỹ sư</a>
+      </div>
+    </div>
+  </sc-if>
+</div>
+
+<!-- ═══ PAIN + SOLUTION ═══ -->
+<div style="display:flex;align-items:center;gap:10px;padding:24px 20px 14px">
+  <div style="width:4px;height:24px;background:#f59e0b;border-radius:2px;flex-shrink:0"></div>
+  <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Tại sao cây bị nấm hoài?</h2>
+</div>
+<div style="height:1px;background:#ddd8ce;margin:0 20px"></div>
+<div style="padding:18px 20px">
+  <ul style="list-style:none;margin-bottom:20px">
+    <li style="display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid #ebe7e0;font-size:17px;color:#444;line-height:1.55"><span style="font-size:20px;flex-shrink:0;line-height:1.4">❌</span>Thuốc nấm thông thường chỉ diệt bào tử bề mặt — nấm bên trong còn nguyên</li>
+    <li style="display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid #ebe7e0;font-size:17px;color:#444;line-height:1.55"><span style="font-size:20px;flex-shrink:0;line-height:1.4">❌</span>Phun nhiều lần cây quen thuốc, nấm kháng lại càng mạnh hơn</li>
+    <li style="display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid #ebe7e0;font-size:17px;color:#444;line-height:1.55"><span style="font-size:20px;flex-shrink:0;line-height:1.4">❌</span>Trời ẩm, nước đọng lá — nấm tái phát liên tục sau mưa</li>
+    <li style="display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid #ebe7e0;font-size:17px;color:#444;line-height:1.55"><span style="font-size:20px;flex-shrink:0;line-height:1.4">❌</span>Đọt non chết → cây mất điểm sinh trưởng → năng suất giảm trầm trọng</li>
+    <li style="display:flex;align-items:flex-start;gap:12px;padding:12px 0;font-size:17px;color:#444;line-height:1.55"><span style="font-size:20px;flex-shrink:0;line-height:1.4">❌</span>Tốn tiền phun 4–5 lần vẫn không dứt bệnh, cây càng yếu dần</li>
+  </ul>
+  <div style="background:#fef3c7;border:1px solid #fcd34d;border-left:5px solid #f59e0b;border-radius:0 12px 12px 0;padding:16px 18px">
+    <div style="font-size:17px;color:#78350f;font-weight:700;line-height:1.65">JAPA VIL 110SC thẩm thấu hệ thống vào bên trong cây<br><span style="color:#b91c1c;font-weight:900">Diệt tận gốc nấm bên trong — chỉ 2 lần phun là khỏi hẳn</span></div>
+  </div>
+</div>
+
+<!-- ═══ SO SÁNH ĐỐI THỦ ═══ -->
+<div style="background:#0a3d20;padding:26px 20px 28px">
+  <div style="text-align:center;margin-bottom:20px">
+    <div style="font-size:22px;font-weight:900;color:#f59e0b;margin-bottom:5px">🏆 Tại sao JAPA VIL hơn thuốc nấm thông thường?</div>
+    <div style="font-size:15px;color:rgba(255,255,255,.65);line-height:1.5">So sánh thực tế — bà con xem ngay</div>
+  </div>
+  <!-- Header -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+    <div style="background:#f59e0b;border-radius:10px 10px 0 0;padding:10px 12px;text-align:center">
+      <div style="font-size:15px;font-weight:900;color:#0a3d20">🌿 JAPA VIL 110SC</div>
+      <div style="font-size:12px;color:rgba(10,61,32,.7);margin-top:2px;font-weight:600">← Sản phẩm này</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px 10px 0 0;padding:10px 12px;text-align:center">
+      <div style="font-size:15px;font-weight:700;color:rgba(255,255,255,.6)">Thuốc nấm thường</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.35);margin-top:2px">Các loại khác</div>
+    </div>
+  </div>
+  <!-- Rows -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">
+    <div style="background:rgba(245,158,11,.13);border:1.5px solid rgba(245,158,11,.35);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:#f59e0b;line-height:1.2">Thẩm thấu<br>hệ thống</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:5px;line-height:1.5">✅ Ngấm sâu vào mô cây, diệt nấm từ bên trong lẫn bên ngoài</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:rgba(255,255,255,.35);line-height:1.2">Tiếp xúc<br>bề mặt</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:5px;line-height:1.5">❌ Chỉ diệt bào tử lớp ngoài — nấm bên trong còn nguyên</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">
+    <div style="background:rgba(245,158,11,.13);border:1.5px solid rgba(245,158,11,.35);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:#f59e0b;line-height:1.2">2 lần phun<br>là khỏi</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:5px;line-height:1.5">✅ Hiệu quả rõ từ lần phun thứ 1, dứt hẳn sau lần thứ 2</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:rgba(255,255,255,.35);line-height:1.2">4–6 lần<br>chưa khỏi</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:5px;line-height:1.5">❌ Phải phun nhiều lần, nấm tái phát sau mưa</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">
+    <div style="background:rgba(245,158,11,.13);border:1.5px solid rgba(245,158,11,.35);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:#f59e0b;line-height:1.2">Không sợ<br>kháng thuốc</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:5px;line-height:1.5">✅ Cơ chế tác động mới — nấm không tạo đề kháng được</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:rgba(255,255,255,.35);line-height:1.2">Kháng thuốc<br>sau vài vụ</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:5px;line-height:1.5">❌ Phun quen → nấm nhờn thuốc → càng ngày càng khó trị</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">
+    <div style="background:rgba(245,158,11,.13);border:1.5px solid rgba(245,158,11,.35);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:#f59e0b;line-height:1.2">4 bệnh<br>1 chai</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:5px;line-height:1.5">✅ Trị được Phấn Trắng, Thúi Đọt, Nấm Bẹ, Đốm/Cháy Lá</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:rgba(255,255,255,.35);line-height:1.2">Mỗi bệnh<br>1 thuốc</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:5px;line-height:1.5">❌ Phải mua nhiều loại, tốn tiền và khó quản lý</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div style="background:rgba(245,158,11,.13);border:1.5px solid rgba(245,158,11,.35);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:#f59e0b;line-height:1.2">Hoàn tiền<br>100%</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.88);margin-top:5px;line-height:1.5">✅ Không hiệu quả hoàn tiền — cam kết bằng văn bản</div>
+    </div>
+    <div style="background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;padding:12px">
+      <div style="font-size:18px;font-weight:900;color:rgba(255,255,255,.35);line-height:1.2">Không<br>bảo hành</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.45);margin-top:5px;line-height:1.5">❌ Mua về không khỏi là mất tiền, không đổi được</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HIỆU QUẢ THEO THỜI GIAN ═══ -->
+<div style="background:#faf8f3;padding:4px 0 4px">
+  <div style="display:flex;align-items:center;gap:10px;padding:22px 20px 14px">
+    <div style="width:4px;height:24px;background:#f59e0b;border-radius:2px;flex-shrink:0"></div>
+    <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Sau khi phun JAPA VIL</h2>
+  </div>
+  <div style="height:1px;background:#ddd8ce;margin:0 20px 18px"></div>
+  <!-- Day 1 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;padding:0 20px;margin-bottom:16px">
+    <div style="width:54px;height:54px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;text-align:center;line-height:1.2">
+      <span style="font-size:20px">24h</span>
+    </div>
+    <div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;margin-bottom:4px">Thuốc thẩm thấu vào bên trong mô cây</div>
+      <div style="font-size:15px;color:#555;line-height:1.6">Hoạt chất di chuyển lên toàn bộ đọt, lá non, bẹ — diệt nấm từ bên trong ra ngoài.</div>
+    </div>
+  </div>
+  <div style="width:1px;background:#ddd8ce;height:12px;margin:0 47px -4px"></div>
+  <!-- Day 2 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;padding:0 20px;margin-bottom:16px">
+    <div style="width:54px;height:54px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;text-align:center;line-height:1.2">
+      <span style="font-size:20px">2–3</span>
+      <span style="font-size:11px">ngày</span>
+    </div>
+    <div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;margin-bottom:4px">Bệnh dừng lây lan, vết nấm khô dần</div>
+      <div style="font-size:15px;color:#555;line-height:1.6">Phấn trắng dừng bám lan. Thúi đọt dừng chảy nước. Đốm lá không to thêm.</div>
+    </div>
+  </div>
+  <div style="width:1px;background:#ddd8ce;height:12px;margin:0 47px -4px"></div>
+  <!-- Day 5 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;padding:0 20px;margin-bottom:16px">
+    <div style="width:54px;height:54px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;text-align:center;line-height:1.2">
+      <span style="font-size:20px">5–7</span>
+      <span style="font-size:11px">ngày</span>
+    </div>
+    <div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;margin-bottom:4px">Đọt non bung mạnh trở lại</div>
+      <div style="font-size:15px;color:#555;line-height:1.6">Cây phục hồi rõ rệt. Đọt non bung xanh, lá mới dày và khoẻ. Trái đậu nhiều hơn.</div>
+    </div>
+  </div>
+  <div style="width:1px;background:#ddd8ce;height:12px;margin:0 47px -4px"></div>
+  <!-- Lần 2 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;padding:0 20px 20px">
+    <div style="width:54px;height:54px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;text-align:center;line-height:1.1">
+      <span style="font-size:13px">Lần 2</span>
+      <span style="font-size:11px">(tuần 2)</span>
+    </div>
+    <div>
+      <div style="font-size:16px;font-weight:800;color:#0a3d20;margin-bottom:4px">Khỏi hẳn — phòng tái phát 60 ngày</div>
+      <div style="font-size:15px;color:#555;line-height:1.6">Phun lần 2 sau 7–10 ngày để củng cố. Cây sạch bệnh, bộ lá xanh bền, đề kháng tăng.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BEFORE / AFTER ═══ -->
+<div style="display:flex;align-items:center;gap:10px;padding:24px 20px 14px">
+  <div style="width:4px;height:24px;background:#f59e0b;border-radius:2px;flex-shrink:0"></div>
+  <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Nhà vườn thực tế đã dùng</h2>
+</div>
+<div style="height:1px;background:#ddd8ce;margin:0 20px"></div>
+<div style="padding:16px 20px 20px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+    <div style="border-radius:12px;overflow:hidden;position:relative">
+      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80" alt="Trước" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:9px 10px;font-size:15px;font-weight:800;text-align:center;background:rgba(185,28,28,.85);color:#fff">TRƯỚC</div>
+    </div>
+    <div style="border-radius:12px;overflow:hidden;position:relative">
+      <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=600&q=80" alt="Sau 7 ngày" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:9px 10px;font-size:15px;font-weight:800;text-align:center;background:rgba(10,61,32,.88);color:#f59e0b">SAU 7 NGÀY</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce">
+      <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=400&q=80" alt="Vườn dừa" loading="lazy" style="width:100%;height:120px;object-fit:cover;display:block">
+      <div style="padding:10px 12px;background:#faf8f3">
+        <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Chị Hằng</strong>
+        <span style="font-size:13px;color:#888">Bến Tre · Vườn dừa</span>
+      </div>
+    </div>
+    <div style="border-radius:12px;overflow:hidden;border:1px solid #ddd8ce">
+      <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&q=80" alt="Vườn cây" loading="lazy" style="width:100%;height:120px;object-fit:cover;display:block">
+      <div style="padding:10px 12px;background:#faf8f3">
+        <strong style="display:block;font-size:14px;font-weight:700;color:#0a3d20">Anh Tâm</strong>
+        <span style="font-size:13px;color:#888">Bến Tre · Phục hồi đọt</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HƯỚNG DẪN SỬ DỤNG ═══ -->
+<div style="background:#0a3d20;padding:26px 20px 28px">
+  <div style="font-size:22px;font-weight:900;color:#f59e0b;text-align:center;margin-bottom:5px">📋 Cách dùng — 4 bước đơn giản</div>
+  <div style="font-size:15px;color:rgba(255,255,255,.65);text-align:center;margin-bottom:22px">Bà con làm đúng 4 bước này là cây khỏi bệnh</div>
+  <!-- Step 1 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:18px">
+    <div style="width:50px;height:50px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">📏</div>
+    <div>
+      <div style="font-size:17px;font-weight:800;color:#f59e0b;margin-bottom:4px">Bước 1: Đong đúng liều</div>
+      <div style="font-size:16px;color:rgba(255,255,255,.85);line-height:1.6">Lấy <strong style="color:#fcd34d">5ml (1 nắp nhỏ)</strong> cho mỗi 1 lít nước phun<br>Bệnh nặng: tăng lên 7ml/1L nhưng không vượt 10ml</div>
+    </div>
+  </div>
+  <div style="width:2px;background:rgba(255,255,255,.15);height:14px;margin:0 25px -4px"></div>
+  <!-- Step 2 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:18px">
+    <div style="width:50px;height:50px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🪣</div>
+    <div>
+      <div style="font-size:17px;font-weight:800;color:#f59e0b;margin-bottom:4px">Bước 2: Pha vào nước — khuấy đều</div>
+      <div style="font-size:16px;color:rgba(255,255,255,.85);line-height:1.6">Đổ thuốc vào bình phun đã có nước. Khuấy đều 10 giây là đủ.</div>
+    </div>
+  </div>
+  <div style="width:2px;background:rgba(255,255,255,.15);height:14px;margin:0 25px -4px"></div>
+  <!-- Step 3 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:18px">
+    <div style="width:50px;height:50px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">💨</div>
+    <div>
+      <div style="font-size:17px;font-weight:800;color:#f59e0b;margin-bottom:4px">Bước 3: Phun đều 2 mặt lá</div>
+      <div style="font-size:16px;color:rgba(255,255,255,.85);line-height:1.6">Xịt đều mặt trên và dưới lá. Chú ý kỹ phần đọt non và bẹ lá. Phun vào sáng sớm hoặc chiều mát.</div>
+    </div>
+  </div>
+  <div style="width:2px;background:rgba(255,255,255,.15);height:14px;margin:0 25px -4px"></div>
+  <!-- Step 4 -->
+  <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:22px">
+    <div style="width:50px;height:50px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🌿</div>
+    <div>
+      <div style="font-size:17px;font-weight:800;color:#f59e0b;margin-bottom:4px">Bước 4: Phun lần 2 sau 7–10 ngày</div>
+      <div style="font-size:16px;color:rgba(255,255,255,.85);line-height:1.6">Lần 2 để củng cố, dứt hẳn bệnh. Sau đó phòng tái phát mỗi <strong style="color:#fcd34d">30–45 ngày phun 1 lần</strong>.</div>
+    </div>
+  </div>
+  <!-- Warning note -->
+  <div style="background:rgba(245,158,11,.12);border:1.5px solid rgba(245,158,11,.35);border-radius:12px;padding:14px 16px">
+    <div style="font-size:15px;font-weight:700;color:#fcd34d;margin-bottom:5px">⚠️ Lưu ý quan trọng</div>
+    <div style="font-size:15px;color:rgba(255,255,255,.8);line-height:1.65">Không phun lúc nắng gắt giữa trưa. Không để thuốc khô trên lá trước khi thẩm thấu. Đeo khẩu trang khi phun. Rửa tay sạch sau khi pha thuốc.</div>
+  </div>
+</div>
+
+<!-- ═══ COMBO PRICING ═══ -->
+<div id="combo">
+  <div style="display:flex;align-items:center;gap:10px;padding:24px 20px 14px">
+    <div style="width:4px;height:24px;background:#f59e0b;border-radius:2px;flex-shrink:0"></div>
+    <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Chọn combo · Tiết kiệm hơn</h2>
+  </div>
+  <div style="height:1px;background:#ddd8ce;margin:0 20px"></div>
+  <div style="padding:16px 20px 6px;display:flex;flex-direction:column;gap:12px">
+
+    <!-- Combo 1 -->
+    <div style="border:2px solid #ddd8ce;border-radius:14px;overflow:hidden">
+      <div style="background:#faf8f3;padding:14px 16px;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-size:16px;font-weight:800;color:#0a3d20;margin-bottom:2px">Mua 2 chai</div>
+          <div style="font-size:14px;color:#888;font-weight:500">97.500₫/chai · Freeship</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:26px;font-weight:900;color:#0a3d20;line-height:1">195.000₫</div>
+          <div style="font-size:13px;color:#888;margin-top:2px">tiết kiệm 65.000₫</div>
+        </div>
+      </div>
+      <a href="#form" style="display:block;background:#0a3d20;color:#fff;padding:13px;font-size:16px;font-weight:700;text-align:center;text-decoration:none">Đặt combo 2 chai →</a>
+    </div>
+
+    <!-- Combo 2 (highlighted) -->
+    <div style="border:3px solid #f59e0b;border-radius:14px;overflow:hidden;position:relative">
+      <div style="position:absolute;top:-1px;right:16px;background:#b91c1c;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:0 0 8px 8px;letter-spacing:.04em">BÁN CHẠY NHẤT</div>
+      <div style="background:#fef3c7;padding:16px 16px 14px;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-size:17px;font-weight:800;color:#0a3d20;margin-bottom:2px">Mua 3 tặng 1 🎁</div>
+          <div style="font-size:14px;color:#78350f;font-weight:600">Nhận 4 chai · chỉ 67.500₫/chai</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:14px;color:#aaa;text-decoration:line-through">520.000₫</div>
+          <div style="font-size:28px;font-weight:900;color:#b91c1c;line-height:1">270.000₫</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">tiết kiệm 250.000₫</div>
+        </div>
+      </div>
+      <a href="#form" style="display:block;background:#f59e0b;color:#0a3d20;padding:15px;font-size:17px;font-weight:800;text-align:center;text-decoration:none;animation:glow 2s ease-in-out infinite">Đặt ngay combo này →</a>
+    </div>
+
+    <!-- Combo 3 -->
+    <div style="border:2px solid #ddd8ce;border-radius:14px;overflow:hidden;position:relative">
+      <div style="position:absolute;top:-1px;right:16px;background:#0a3d20;color:#f59e0b;font-size:12px;font-weight:700;padding:4px 12px;border-radius:0 0 8px 8px;letter-spacing:.04em">CÓ LỢI NHẤT</div>
+      <div style="background:#faf8f3;padding:16px 16px 14px;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-size:17px;font-weight:800;color:#0a3d20;margin-bottom:2px">Mua 5 tặng 2 🎁🎁</div>
+          <div style="font-size:14px;color:#555;font-weight:600">Nhận 7 chai · chỉ 64.000₫/chai</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:14px;color:#aaa;text-decoration:line-through">910.000₫</div>
+          <div style="font-size:28px;font-weight:900;color:#b91c1c;line-height:1">450.000₫</div>
+          <div style="font-size:12px;color:#888;margin-top:2px">tiết kiệm 460.000₫</div>
+        </div>
+      </div>
+      <a href="#form" style="display:block;background:#0a3d20;color:#fff;padding:13px;font-size:16px;font-weight:700;text-align:center;text-decoration:none">Đặt combo 5+2 chai →</a>
+    </div>
+  </div>
+
+  <!-- 3 KHÔNG cam kết -->
+  <div style="margin:12px 20px 20px;background:#0a3d20;border-radius:14px;padding:18px">
+    <div style="font-size:17px;font-weight:900;color:#f59e0b;text-align:center;margin-bottom:14px">Cam kết 3 KHÔNG</div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:22px;flex-shrink:0">✅</span>
+        <span style="font-size:16px;font-weight:700;color:#fff;line-height:1.4">KHÔNG đặt cọc trước — nhận hàng rồi mới trả</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:22px;flex-shrink:0">✅</span>
+        <span style="font-size:16px;font-weight:700;color:#fff;line-height:1.4">KHÔNG hiệu quả — hoàn tiền toàn bộ</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:22px;flex-shrink:0">✅</span>
+        <span style="font-size:16px;font-weight:700;color:#fff;line-height:1.4">KHÔNG ưng ý — trả lại miễn phí</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ REVIEWS ═══ -->
+<div style="background:#f4f1eb;padding:4px 0 6px">
+  <div style="display:flex;align-items:center;gap:10px;padding:20px 20px 14px">
+    <div style="width:4px;height:24px;background:#f59e0b;border-radius:2px;flex-shrink:0"></div>
+    <h2 style="font-size:19px;font-weight:800;color:#0a3d20;letter-spacing:.02em;text-transform:uppercase">Nhà vườn nói gì?</h2>
+  </div>
+  <div style="height:1px;background:#ddd8ce;margin:0 20px 16px"></div>
+  <!-- Review 1 -->
+  <div style="margin:0 20px 12px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;flex-shrink:0">CH</div>
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Chị Hằng</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Bến Tre · Vườn dừa</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 14</div>
+    </div>
+    <div style="display:inline-block;background:#fef3c7;border:1px solid #fcd34d;color:#78350f;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Nấm bẹ được kiểm soát tốt</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Nấm bẹ ở vài cây được kiểm soát tốt, cây phát triển ổn định hơn. Thấy khác biệt rõ sau đợt phun thứ 2, bộ lá nhìn xanh hơn nhiều."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Shop:</strong> Cảm ơn chị, chúc vườn dừa lứa nào cũng khoẻ!</div>
+  </div>
+  <!-- Review 2 -->
+  <div style="margin:0 20px 12px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;flex-shrink:0">AT</div>
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Anh Tâm</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Bến Tre · Dừa xiêm xanh</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 11</div>
+    </div>
+    <div style="display:inline-block;background:#fef3c7;border:1px solid #fcd34d;color:#78350f;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Đọt non hết thúi sau 2 đợt xử lý</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Đọt non hết thúi sau hai đợt xử lý, lá mới lên xanh và bung đều hơn trước. Trước đây phun 5–6 lần vẫn còn tái phát, xài loại này chỉ 2 lần là thấy rõ."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Shop:</strong> Cảm ơn anh Tâm, đúng là 2 lần phun là thấy kết quả!</div>
+  </div>
+  <!-- Review 3 -->
+  <div style="margin:0 20px 12px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;flex-shrink:0">CH</div>
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Chị Hồng</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Tiền Giang · Vườn dừa dứa</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 9</div>
+    </div>
+    <div style="display:inline-block;background:#fef3c7;border:1px solid #fcd34d;color:#78350f;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Đốm lá giảm rõ — xanh hơn hẳn</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Đốm lá giảm rõ, bộ lá nhìn xanh hơn. Dùng cho cả vườn khá tiết kiệm, mua combo 3 tặng 1 dùng được cả mùa."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Shop:</strong> Cảm ơn chị, combo 3+1 là tiết kiệm nhất ạ!</div>
+  </div>
+  <!-- Review 4 -->
+  <div style="margin:0 20px 6px;border:1px solid #ddd8ce;border-radius:12px;padding:16px;background:#fff">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#0a3d20;color:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;flex-shrink:0">AH</div>
+      <div style="flex:1">
+        <div style="font-size:15px;font-weight:700;color:#0d1f0e">Anh Hải</div>
+        <div style="font-size:13px;color:#888;margin-top:2px">Bạc Liêu · Vườn dừa sáp</div>
+        <div style="color:#d97706;font-size:14px;margin-top:2px">★★★★★</div>
+      </div>
+      <div style="font-size:13px;color:#bbb">👍 7</div>
+    </div>
+    <div style="display:inline-block;background:#fef3c7;border:1px solid #fcd34d;color:#78350f;font-size:13px;font-weight:700;padding:4px 10px;border-radius:5px;margin-bottom:10px">Đọt mới phát triển khoẻ hơn rõ rệt</div>
+    <div style="font-size:16px;color:#444;line-height:1.7;font-style:italic">"Sau khoảng hai tuần thấy đọt mới phát triển khỏe hơn, lá bung đều. Dễ dùng, pha xong phun luôn, không cần pha trước cả tiếng như mấy loại khác."</div>
+    <div style="margin-top:10px;padding:10px 12px;background:#f4f1eb;border-radius:8px;font-size:14px;color:#555;line-height:1.5"><strong style="color:#0a3d20">Shop:</strong> Cảm ơn anh Hải, chúc vườn mùa nào cũng bội thu!</div>
+  </div>
+</div>
+
+<!-- ═══ ORDER FORM ═══ -->
+<div id="form" style="padding:24px 20px;background:#faf8f3;border-top:2px solid #f59e0b">
+  <div style="margin-bottom:18px">
+    <h2 style="font-size:22px;font-weight:900;color:#0a3d20;line-height:1.3;margin-bottom:5px">Gửi đơn đặt hàng</h2>
+    <p style="font-size:16px;color:#666;line-height:1.5">Điền thông tin — shop gọi xác nhận trong <strong style="color:#b91c1c">15 phút</strong></p>
+  </div>
+  <input type="text" id="nameInput" placeholder="Họ và tên" style="display:block;width:100%;padding:15px 16px;margin-bottom:12px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;background:#fff;color:#0d1f0e;outline:none">
+  <input type="tel" id="phoneInput" placeholder="Số điện thoại *" style="display:block;width:100%;padding:15px 16px;margin-bottom:12px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;background:#fff;color:#0d1f0e;outline:none">
+  <input type="text" id="addressInput" placeholder="Địa chỉ giao hàng" style="display:block;width:100%;padding:15px 16px;margin-bottom:12px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;background:#fff;color:#0d1f0e;outline:none">
+  <!-- Combo selection -->
+  <div style="font-size:15px;font-weight:700;color:#0a3d20;margin-bottom:10px">Chọn combo:</div>
+  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:14px">
+    <label style="display:flex;align-items:center;gap:12px;padding:13px 14px;background:#fff;border:1.5px solid #ddd8ce;border-radius:10px;cursor:pointer">
+      <input type="radio" name="comboOpt" value="1">
+      <span style="font-size:16px;font-weight:600;color:#0d1f0e;line-height:1.4">2 chai · 195.000₫ · Freeship</span>
+    </label>
+    <label style="display:flex;align-items:center;gap:12px;padding:13px 14px;background:#fef3c7;border:2px solid #f59e0b;border-radius:10px;cursor:pointer">
+      <input type="radio" name="comboOpt" value="2" defaultChecked="">
+      <span style="font-size:16px;font-weight:700;color:#0d1f0e;line-height:1.4">🎁 Mua 3 tặng 1 — nhận 4 chai · 270.000₫ <span style="color:#b91c1c">(Phổ biến nhất)</span></span>
+    </label>
+    <label style="display:flex;align-items:center;gap:12px;padding:13px 14px;background:#fff;border:1.5px solid #ddd8ce;border-radius:10px;cursor:pointer">
+      <input type="radio" name="comboOpt" value="3">
+      <span style="font-size:16px;font-weight:600;color:#0d1f0e;line-height:1.4">🎁🎁 Mua 5 tặng 2 — nhận 7 chai · 450.000₫ <span style="color:#0a3d20">(Có lợi nhất)</span></span>
+    </label>
+  </div>
+  <select id="cropSel" style="display:block;width:100%;padding:15px 16px;margin-bottom:14px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;background:#fff;color:#0d1f0e;outline:none">
+    <option value="" disabled="" selected="">Loại cây trồng</option>
+    <option>Dừa xiêm</option><option>Dừa dứa</option><option>Dừa sáp</option><option>Dừa khác</option><option>Sầu riêng</option><option>Cam / Bưởi</option><option>Cây ăn trái khác</option><option>Đại lý / Cửa hàng</option>
+  </select>
+  <button id="mainFormBtn" type="button" onClick="{{ onMainSubmit }}" style="width:100%;padding:17px;background:#b91c1c;color:#fff;font-size:19px;font-weight:800;border:none;border-radius:12px;cursor:pointer;letter-spacing:.03em;animation:glow 2s ease-in-out infinite">Đặt ngay — COD toàn quốc</button>
+  <div style="display:flex;justify-content:center;gap:20px;margin-top:12px;flex-wrap:wrap">
+    <span style="font-size:13px;color:#888;display:flex;align-items:center;gap:4px">📦 COD toàn quốc</span>
+    <span style="font-size:13px;color:#888;display:flex;align-items:center;gap:4px">🚚 Miễn phí ship</span>
+    <span style="font-size:13px;color:#888;display:flex;align-items:center;gap:4px">💯 Hoàn tiền nếu không hiệu quả</span>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<div style="background:#0a3d20;padding:22px 20px;border-top:3px solid #f59e0b">
+  <div style="font-size:15px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.03em;margin-bottom:16px;line-height:1.5">JAPA VIL 110SC · Thuốc Trị Nấm Cây Trồng</div>
+  <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">📞</span>
+    <a href="tel:0876186796" style="font-size:15px;color:rgba(255,255,255,.75);text-decoration:none">0876 186 796</a>
+  </div>
+  <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">🌐</span>
+    <p style="font-size:15px;color:rgba(255,255,255,.75)">www.nongnghiep.fun</p>
+  </div>
+  <div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+    <span style="font-size:17px;flex-shrink:0">💬</span>
+    <p style="font-size:15px;color:rgba(255,255,255,.75)">Zalo tư vấn: <a href="tel:0876186796" style="color:rgba(255,255,255,.75);text-decoration:none">0876 186 796</a></p>
+  </div>
+  <div style="font-size:11px;color:rgba(255,255,255,.3);margin-top:14px;border-top:1px solid rgba(255,255,255,.1);padding-top:12px">Sản phẩm có mã lưu hành đăng ký tại Cục BVTV. Hiệu quả có thể thay đổi tuỳ điều kiện canh tác.</div>
+</div>
+
+<!-- ═══ STICKY BAR ═══ -->
+<div style="position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:460px;z-index:400;background:#0a3d20;border-top:3px solid #f59e0b;box-shadow:0 -2px 12px rgba(0,0,0,.25)">
+  <div style="display:flex;align-items:center;gap:8px;padding:10px 14px">
+    <a href="tel:0876186796" style="font-size:28px;text-decoration:none;flex-shrink:0">📞</a>
+    <input type="tel" id="stickyInput" placeholder="SĐT — gọi lại xác nhận đơn ngay" style="flex:1;padding:11px 14px;border:1.5px solid rgba(255,255,255,.25);border-radius:8px;background:rgba(255,255,255,.1);color:#fff;font-size:15px;outline:none;caret-color:#fff">
+    <button id="stickyBtn" type="button" onClick="{{ onStickySubmit }}" style="background:#f59e0b;color:#0a3d20;padding:11px 14px;border-radius:8px;font-size:14px;font-weight:800;border:none;cursor:pointer;white-space:nowrap">Đặt ngay</button>
+  </div>
+</div>
+
+<!-- ═══ POPUP ═══ -->
+<sc-if value="{{ showPopup }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closePopup }}" style="position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px">
+    <div onClick="{{ stopProp }}" style="background:#fff;border-radius:18px;overflow:hidden;width:340px;max-width:100%;position:relative;animation:popIn .35s ease">
+      <div style="background:#0a3d20;padding:20px 22px 18px;position:relative">
+        <button onClick="{{ closePopup }}" style="position:absolute;top:10px;right:14px;font-size:24px;cursor:pointer;color:rgba(255,255,255,.7);font-weight:700;line-height:1;background:none;border:none">×</button>
+        <div style="font-size:13px;color:#f59e0b;font-weight:700;letter-spacing:.06em;margin-bottom:6px">🔥 ƯU ĐÃI ĐẶC BIỆT HÔM NAY</div>
+        <div style="font-size:24px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:4px">Mua 3 Tặng 1</div>
+        <div style="font-size:16px;color:rgba(255,255,255,.75)">Chỉ <strong style="color:#f59e0b;font-size:20px">270.000₫</strong> nhận 4 chai · Freeship · COD</div>
+      </div>
+      <div style="padding:18px 22px 22px">
+        <p style="font-size:15px;color:#555;margin-bottom:16px;line-height:1.6">Để lại số điện thoại — shop gọi xác nhận đơn trong <strong style="color:#b91c1c">15 phút</strong></p>
+        <input type="tel" id="popupPhone" placeholder="Số điện thoại" style="display:block;width:100%;padding:14px 16px;border:2px solid #ddd8ce;border-radius:10px;font-size:17px;margin-bottom:12px;outline:none">
+        <button id="popupBtn" type="button" onClick="{{ onPopupSubmit }}" style="width:100%;background:#b91c1c;color:#fff;padding:15px;border-radius:10px;font-size:17px;font-weight:800;border:none;cursor:pointer">Đặt ngay — Combo 3 tặng 1</button>
+        <p style="font-size:12px;color:#aaa;text-align:center;margin-top:8px">COD · Freeship · Hoàn tiền nếu không hiệu quả</p>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 460, &quot;height&quot;: 900 }
+}">
+
+class Component extends DCLogic {
+  state = {
+    seconds: 19 * 3600 + 44 * 60 + 17,
+    stock: 28,
+    selectedDisease: null,
+    showPopup: false
+  };
+
+  componentDidMount() {
+    this._cTimer = setInterval(() => {
+      this.setState(s => ({ seconds: Math.max(0, s.seconds - 1) }));
+    }, 1000);
+    this._sTimer = setInterval(() => {
+      this.setState(s => {
+        if (Math.random() < 0.08 && s.stock > 5) return { stock: s.stock - 1 };
+        return null;
+      });
+    }, 9000);
+    this._pTimer = setTimeout(() => this.setState({ showPopup: true }), 7000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this._cTimer);
+    clearInterval(this._sTimer);
+    clearTimeout(this._pTimer);
+  }
+
+  selectDisease(name, idx) {
+    this.setState({ selectedDisease: name });
+    document.querySelectorAll('[data-disease-btn]').forEach((btn, j) => {
+      const active = j === idx;
+      btn.style.background = active ? '#0a3d20' : '#fff';
+      btn.style.borderColor = active ? '#f59e0b' : '#ddd8ce';
+      btn.querySelector('div:nth-child(2)').style.color = active ? '#f59e0b' : '#0a3d20';
+      btn.querySelector('div:nth-child(3)').style.color = active ? 'rgba(255,255,255,.7)' : '#888';
+    });
+  }
+
+  submitDone(id, msg) {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    btn.textContent = msg;
+    btn.style.background = '#166534';
+    btn.style.animation = 'none';
+    btn.style.fontSize = '14px';
+    btn.disabled = true;
+  }
+
+  renderVals() {
+    const { seconds, stock, selectedDisease, showPopup } = this.state;
+    const h = String(Math.floor(seconds / 3600)).padStart(2, '0');
+    const m = String(Math.floor(seconds % 3600 / 60)).padStart(2, '0');
+    const s = String(seconds % 60).padStart(2, '0');
+    const stockPct = Math.min(95, Math.max(5, Math.round((80 - stock) / 80 * 100)));
+
+    const tips = {
+      'Phấn Trắng': 'Phun ướt đẫm 2 mặt lá, chú ý mặt dưới lá. Liều 5–7ml/lít nước. Phun lần 2 sau 7 ngày để dứt hẳn. Ngăn lây lan bằng cách phun cả cây khoẻ xung quanh.',
+      'Thúi Đọt':    'Phun tập trung vào phần đọt non và đỉnh cây. Liều 7ml/lít. Nếu đọt đã thúi nặng: cắt bỏ phần thối trước rồi mới phun. Phun 2 lần cách nhau 5–7 ngày.',
+      'Nấm Bẹ':      'Phun ướt đẫm vùng bẹ lá và thân gần gốc. Liều 5–7ml/lít. Kết hợp cải thiện thoát nước gốc để hạn chế ẩm. Phun 2 lần cách nhau 7 ngày.',
+      'Đốm / Cháy Lá': 'Phun đều 2 mặt lá, đặc biệt mặt dưới là nơi nấm bào tử nảy mầm. Liều 5ml/lít. Loại bỏ lá bệnh nặng trước khi phun. Phun 2 lần cách nhau 7–10 ngày.'
+    };
+
+    return {
+      countdown: `${h}:${m}:${s}`,
+      stock,
+      stockPct,
+      selectedDisease: selectedDisease || '',
+      hasDiseaseRec: !!selectedDisease,
+      diseaseRec: selectedDisease ? tips[selectedDisease] : '',
+      showPopup,
+      onDisease0: () => this.selectDisease('Phấn Trắng', 0),
+      onDisease1: () => this.selectDisease('Thúi Đọt', 1),
+      onDisease2: () => this.selectDisease('Nấm Bẹ', 2),
+      onDisease3: () => this.selectDisease('Đốm / Cháy Lá', 3),
+      closePopup: () => this.setState({ showPopup: false }),
+      stopProp: (e) => e && e.stopPropagation(),
+      onMainSubmit: () => this.submitDone('mainFormBtn', '✅ Đã nhận đơn — Shop gọi xác nhận trong 15 phút'),
+      onStickySubmit: () => this.submitDone('stickyBtn', '✅ Đã nhận!'),
+      onPopupSubmit: () => {
+        this.submitDone('popupBtn', '✅ Đã đặt thành công!');
+        setTimeout(() => this.setState({ showPopup: false }), 1800);
+      }
+    };
+  }
+}
+
+</script>
+</body>
+</html>
