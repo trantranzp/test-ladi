@@ -8,8 +8,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NM2BVD8K');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM2BVD8K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ═══ TOPBAR ═══ -->
 <div class="topbar">
@@ -466,7 +477,8 @@
 <div class="mini-form">
   <div class="mini-form-title">📲 Để lại SĐT — Kỹ sư gọi lại trong 15 phút</div>
   <label for="miniPhone" class="sr-only">Số điện thoại</label>
-  <input type="tel" placeholder="Số điện thoại *" id="miniPhone" class="field-input">
+  <input type="tel" placeholder="Số điện thoại *" id="miniPhone" class="field-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="miniPhoneError">
+  <div id="miniPhoneError" class="field-error" role="alert"></div>
   <label for="miniCrop" class="sr-only">Loại cây trồng</label>
   <select id="miniCrop" class="field-input">
     <option value="" disabled selected>Loại cây trồng</option>
@@ -713,7 +725,8 @@
     <label for="mainName" class="sr-only">Họ và tên</label>
     <input type="text" id="mainName" placeholder="Họ và tên" class="field-input">
     <label for="mainPhone" class="sr-only">Số điện thoại</label>
-    <input type="tel" id="mainPhone" placeholder="Số điện thoại *" class="field-input field-input--accent">
+    <input type="tel" id="mainPhone" placeholder="Số điện thoại *" class="field-input field-input--accent" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="mainPhoneError">
+    <div id="mainPhoneError" class="field-error" role="alert"></div>
     <div class="option-list">
       <label class="option-row option-row--selected">
         <input type="radio" name="opt" value="1" checked>
@@ -778,10 +791,11 @@
 
 <!-- ═══ STICKY BAR ═══ -->
 <div class="sticky-bar">
+  <div id="stickyPhoneError" class="field-error" role="alert" style="padding:0 14px;margin:6px 0 0;color:#fca5a5"></div>
   <div class="sticky-bar-inner">
     <a href="tel:0876186796" class="sticky-call" aria-label="Gọi điện">📞</a>
     <label for="stickyPhone" class="sr-only">Số điện thoại</label>
-    <input type="tel" id="stickyPhone" placeholder="SĐT — Kỹ sư gọi lại 15 phút" class="sticky-input">
+    <input type="tel" id="stickyPhone" placeholder="SĐT — Kỹ sư gọi lại 15 phút" class="sticky-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="stickyPhoneError">
     <button id="stickyBtn" type="button" data-action="sticky-submit" class="btn btn-urgent">✨ Báo giá ngay</button>
   </div>
 </div>
@@ -806,7 +820,8 @@
       </div>
       <div class="popup-call-note">Kỹ sư gọi xác nhận đơn trong <strong>15 phút</strong></div>
       <label for="popupPhone" class="sr-only">Số điện thoại</label>
-      <input type="tel" id="popupPhone" placeholder="Số điện thoại của bạn" class="popup-input">
+      <input type="tel" id="popupPhone" placeholder="Số điện thoại của bạn" class="popup-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="popupPhoneError">
+      <div id="popupPhoneError" class="field-error" role="alert"></div>
       <button id="popupBtn" type="button" data-action="popup-submit" class="btn btn-primary btn-sm">ĐẶT NGAY — COMBO 3 TẶNG 1</button>
       <div class="popup-trust-row">
         <div>🚚 Freeship</div>

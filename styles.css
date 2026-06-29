@@ -229,6 +229,9 @@ details>div{animation:fadeSlide .22s ease}
 .mini-form{background:var(--cream-50);border-top:1px solid var(--cream-200);border-bottom:1px solid var(--cream-200);padding:20px}
 .mini-form-title{font-size:18px;font-weight:800;color:var(--green-900);margin-bottom:14px;line-height:1.4}
 .field-input{display:block;width:100%;padding:15px 16px;margin-bottom:12px;border:2px solid var(--cream-200);border-radius:10px;font-size:17px;background:#fff;color:var(--ink-900);outline:none}
+.field-input.invalid{border-color:var(--red-700);margin-bottom:4px}
+.field-error{display:none;color:var(--red-700);font-size:13px;font-weight:700;margin:-8px 0 10px;line-height:1.4}
+.field-error.visible{display:block}
 
 /* ───────── Steps ───────── */
 .steps-section{background:var(--green-900);padding:24px 20px 26px}
@@ -329,6 +332,9 @@ details>div{animation:fadeSlide .22s ease}
 .sticky-bar-inner{display:flex;align-items:center;gap:8px;padding:10px 14px}
 .sticky-call{font-size:28px;text-decoration:none;flex-shrink:0}
 .sticky-input{flex:1;padding:11px 14px;border:1.5px solid rgba(255,255,255,.25);border-radius:8px;background:rgba(255,255,255,.1);color:#fff;font-size:15px;outline:none;caret-color:#fff}
+.sticky-input.invalid{border-color:#ef4444;background:rgba(239,68,68,.15)}
+@keyframes shakeError{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.shake{animation:shakeError .3s ease}
 .sticky-bar .btn{width:auto;padding:11px 16px;border-radius:8px;font-size:14px;white-space:nowrap}
 
 /* ───────── Popup ───────── */
@@ -350,5 +356,6 @@ details>div{animation:fadeSlide .22s ease}
 .popup-call-note{font-size:15px;color:#333;font-weight:700;margin-bottom:12px}
 .popup-call-note strong{color:var(--red-700);font-weight:900}
 .popup-input{display:block;width:100%;padding:15px 16px;border:2px solid var(--green-900);border-radius:10px;font-size:17px;color:var(--ink-900);outline:none;margin-bottom:12px;background:#fff}
+.popup-input.invalid{border-color:var(--red-700);margin-bottom:4px}
 .popup-trust-row{display:flex;justify-content:space-around;margin-top:14px}
 .popup-trust-row div{font-size:12px;color:#666;font-weight:600}

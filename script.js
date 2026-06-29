@@ -17,6 +17,86 @@
     });
   }
 
+  // ───────── GTM dataLayer events ─────────
+  window.dataLayer = window.dataLayer || [];
+
+  function trackEvent(eventName, params) {
+    window.dataLayer.push(Object.assign({ event: eventName }, params || {}));
+  }
+
+  // Bấm gọi điện (tel:) — topbar, sticky bar, footer, hero, symptom block
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      trackEvent('phone_call_click', {
+        phone_number: link.getAttribute('href').replace('tel:', ''),
+        click_location: link.closest('[class*="topbar"]') ? 'topbar'
+          : link.closest('[class*="sticky"]') ? 'sticky_bar'
+          : link.closest('[class*="footer"]') ? 'footer'
+          : link.closest('[class*="symptom"]') ? 'symptom_rec'
+          : 'other'
+      });
+    });
+  });
+
+  // ───────── Phone validation (VN mobile: 0 or +84, then carrier prefix 3/5/7/8/9, then 8 digits) ─────────
+  var PHONE_RE = /^(\+84|0)[35789]\d{8}$/;
+
+  // Keep only digits (plus a leading "+" for the +84 form) as the user types, on all 4 phone fields.
+  // Also clear a previously shown error the moment the value becomes valid again —
+  // never introduce a *new* error while typing, only remove one that's already showing.
+  function sanitizePhoneInput(raw) {
+    var hasPlus = raw.charAt(0) === '+';
+    var digits = raw.replace(/\D/g, '').slice(0, hasPlus ? 11 : 10); // +84 + 9 digits = 11 digits after the +
+    return (hasPlus ? '+' : '') + digits;
+  }
+
+  ['miniPhone', 'mainPhone', 'stickyPhone', 'popupPhone'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var errorEl = document.getElementById(id + 'Error');
+    el.addEventListener('input', function () {
+      var cleaned = sanitizePhoneInput(el.value);
+      if (cleaned !== el.value) el.value = cleaned;
+      if (el.classList.contains('invalid') && PHONE_RE.test(el.value)) {
+        clearPhoneError(el, errorEl);
+      }
+    });
+  });
+
+  function validatePhone(inputId, errorId) {
+    var input = document.getElementById(inputId);
+    var errorEl = document.getElementById(errorId);
+    if (!input) return true;
+    var value = input.value.trim();
+
+    if (!value) {
+      showPhoneError(input, errorEl, 'Vui lòng nhập số điện thoại');
+      return false;
+    }
+    if (!PHONE_RE.test(value)) {
+      showPhoneError(input, errorEl, 'Số điện thoại không hợp lệ (VD: 0901234567 hoặc +84901234567)');
+      return false;
+    }
+    clearPhoneError(input, errorEl);
+    return true;
+  }
+
+  function showPhoneError(input, errorEl, message) {
+    input.classList.add('invalid');
+    input.classList.add('shake');
+    setTimeout(function () { input.classList.remove('shake'); }, 300);
+    if (errorEl) {
+      errorEl.textContent = message;
+      errorEl.classList.add('visible');
+    }
+    input.focus();
+  }
+
+  function clearPhoneError(input, errorEl) {
+    input.classList.remove('invalid');
+    if (errorEl) errorEl.classList.remove('visible');
+  }
+
   // ───────── Countdown timer ─────────
   var seconds = 23 * 3600 + 59 * 59;
   var countdownEl = document.getElementById('countdown');
@@ -204,6 +284,7 @@
   var mainBtn = document.querySelector('[data-action="main-submit"]');
   if (mainBtn) {
     mainBtn.addEventListener('click', function () {
+      if (!validatePhone('mainPhone', 'mainPhoneError')) return;
       var comboInput = document.querySelector('input[name="opt"]:checked');
       var comboLabel = comboInput && comboInput.value === '1'
         ? 'Mua 3 tặng 1 — combo tốt nhất'
@@ -214,6 +295,7 @@
         phone: (document.getElementById('mainPhone') || {}).value || '',
         combo: comboLabel
       });
+      trackEvent('form_submit', { form_source: 'main-form', combo: comboLabel });
       submitDone('mainBtn', '✅ Đã nhận — Kỹ sư gọi lại trong 15 phút');
     });
   }
@@ -221,11 +303,14 @@
   var miniBtn = document.querySelector('[data-action="mini-submit"]');
   if (miniBtn) {
     miniBtn.addEventListener('click', function () {
+      if (!validatePhone('miniPhone', 'miniPhoneError')) return;
+      var cropValue = (document.getElementById('miniCrop') || {}).value || '';
       sendLead({
         source: 'mini-form',
         phone: (document.getElementById('miniPhone') || {}).value || '',
-        crop: (document.getElementById('miniCrop') || {}).value || ''
+        crop: cropValue
       });
+      trackEvent('form_submit', { form_source: 'mini-form', crop: cropValue });
       submitDone('miniBtn', '✅ Đã gửi — Kỹ sư liên hệ ngay');
     });
   }
@@ -233,10 +318,12 @@
   var stickyBtn = document.querySelector('[data-action="sticky-submit"]');
   if (stickyBtn) {
     stickyBtn.addEventListener('click', function () {
+      if (!validatePhone('stickyPhone', 'stickyPhoneError')) return;
       sendLead({
         source: 'sticky-bar',
         phone: (document.getElementById('stickyPhone') || {}).value || ''
       });
+      trackEvent('form_submit', { form_source: 'sticky-bar' });
       submitDone('stickyBtn', '✅ Đã nhận!');
     });
   }
@@ -244,11 +331,13 @@
   var popupBtn = document.querySelector('[data-action="popup-submit"]');
   if (popupBtn) {
     popupBtn.addEventListener('click', function () {
+      if (!validatePhone('popupPhone', 'popupPhoneError')) return;
       sendLead({
         source: 'popup',
         phone: (document.getElementById('popupPhone') || {}).value || '',
         combo: 'Mua 3 tặng 1'
       });
+      trackEvent('form_submit', { form_source: 'popup', combo: 'Mua 3 tặng 1' });
       submitDone('popupBtn', '✅ Đã đăng ký!');
       setTimeout(closePopup, 1500);
     });
