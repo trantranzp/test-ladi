@@ -48,6 +48,56 @@
     }
   }, 10000);
 
+  // ───────── Proof video: muted autoplay only once scrolled into view ─────────
+  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var videoWrap = document.getElementById('proofVideo');
+  var unmuteBtn = document.getElementById('proofVideoUnmute');
+  var ytPlayer = null;
+  var videoStarted = false;
+
+  function startProofVideo() {
+    if (videoStarted || !videoWrap || prefersReducedMotion || typeof YT === 'undefined' || !YT.Player) return;
+    videoStarted = true;
+    ytPlayer = new YT.Player(videoWrap, {
+      videoId: videoWrap.getAttribute('data-video-id'),
+      playerVars: { autoplay: 1, mute: 1, playsinline: 1, rel: 0, modestbranding: 1 },
+      events: {
+        onReady: function (e) {
+          e.target.mute();
+          e.target.playVideo();
+          if (unmuteBtn) unmuteBtn.style.display = 'block';
+        }
+      }
+    });
+  }
+
+  if (unmuteBtn) {
+    unmuteBtn.addEventListener('click', function () {
+      if (!ytPlayer) return;
+      ytPlayer.unMute();
+      unmuteBtn.style.display = 'none';
+    });
+  }
+
+  if (videoWrap) {
+    if (window.IntersectionObserver) {
+      var videoObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            if (window.YT && window.YT.Player) {
+              startProofVideo();
+            } else {
+              window.onYouTubeIframeAPIReady = startProofVideo;
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+      videoObserver.observe(videoWrap);
+    } else {
+      window.onYouTubeIframeAPIReady = startProofVideo;
+    }
+  }
+
   // ───────── Popup ─────────
   var popupOverlay = document.getElementById('popupOverlay');
 
@@ -68,8 +118,8 @@
   // ───────── Symptom selector ─────────
   var symTips = {
     'Vàng Lá': 'Thiếu đạm + vi lượng. Dùng 20-20-20 pha 1ml/lít tưới gốc + phun lá đều 2 mặt. Sau 5–7 ngày lá xanh đậm bền trở lại, không vàng tái phát.',
-    'Đọt Không Ra': 'Thiếu lân kích thích phân hoá mầm. Dùng 10-55-10 pha 1ml/lít tưới gốc + phun đọt non. Chỉ 7 ngày đọt bung đều, cây tăng trưởng mạnh.',
-    'Rễ Kém / Đất Chai': 'Thiếu hữu cơ + vi sinh. Dùng 30-10-10 (hữu cơ 70%) tưới gốc 2 lần/tuần. Sau 3 ngày đất xốp hơn, rễ non nhú rõ, nước thấm đều.',
+    'Đọt Không Ra': 'Thiếu đạm kích bật mầm. Dùng 30-10-10 pha 1ml/lít tưới gốc + phun đọt non. Chỉ 7 ngày đọt bung đồng loạt, đọt mập, lá xanh dày.',
+    'Rễ Kém / Đất Chai': 'Thiếu lân kích rễ. Dùng 10-55-10 (lân cao 55) tưới gốc 2 lần/tuần. Sau 3 ngày đất xốp hơn, rễ non nhú rõ, nước thấm đều.',
     'Cây Ốm Yếu': 'Thiếu kali + vi lượng tổng hợp. Dùng 10-0-30 pha 1ml/lít tưới đều. Sau 14 ngày cành cứng, lá dày bóng, thân to khoẻ hẳn.'
   };
   var symNames = ['Vàng Lá', 'Đọt Không Ra', 'Rễ Kém / Đất Chai', 'Cây Ốm Yếu'];
@@ -125,10 +175,12 @@
     car.addEventListener('mousedown', pause, { passive: true });
     car.addEventListener('mouseup', resume, { passive: true });
 
-    setInterval(function () {
-      if (paused) return;
-      scrollToSlide((activeSlide + 1) % 4);
-    }, 3500);
+    if (!prefersReducedMotion) {
+      setInterval(function () {
+        if (paused) return;
+        scrollToSlide((activeSlide + 1) % 4);
+      }, 3500);
+    }
 
     document.querySelectorAll('[data-dot]').forEach(function (dot) {
       dot.addEventListener('click', function () {
