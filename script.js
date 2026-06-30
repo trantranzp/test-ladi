@@ -300,9 +300,12 @@
   // Set GOOGLE_SCRIPT_URL above (after deploying google-apps-script/Code.gs)
   // to have these actually log to the Sheet + ping Telegram.
 
-  var mainBtn = document.querySelector('[data-action="main-submit"]');
-  if (mainBtn) {
-    mainBtn.addEventListener('click', function () {
+  // Real <form> submit (not button click) so GTM's native "Form Submission"
+  // trigger fires gtm.formSubmit with {{Form Element}} populated correctly.
+  var mainForm = document.getElementById('mainForm');
+  if (mainForm) {
+    mainForm.addEventListener('submit', function (e) {
+      e.preventDefault();
       if (!validatePhone('mainPhone', 'mainPhoneError')) return;
       var comboInput = document.querySelector('input[name="opt"]:checked');
       var comboLabel = comboInput && comboInput.value === '1'
@@ -314,15 +317,15 @@
         phone: (document.getElementById('mainPhone') || {}).value || '',
         combo: comboLabel
       });
-      trackEvent('form_submit', { form_source: 'main-form', combo: comboLabel });
       submitDone('mainBtn', '✅ Đã nhận — Kỹ sư gọi lại trong 15 phút');
       goToThankYou('main-form');
     });
   }
 
-  var miniBtn = document.querySelector('[data-action="mini-submit"]');
-  if (miniBtn) {
-    miniBtn.addEventListener('click', function () {
+  var miniForm = document.getElementById('miniForm');
+  if (miniForm) {
+    miniForm.addEventListener('submit', function (e) {
+      e.preventDefault();
       if (!validatePhone('miniPhone', 'miniPhoneError')) return;
       var cropValue = (document.getElementById('miniCrop') || {}).value || '';
       sendLead({
@@ -330,36 +333,35 @@
         phone: (document.getElementById('miniPhone') || {}).value || '',
         crop: cropValue
       });
-      trackEvent('form_submit', { form_source: 'mini-form', crop: cropValue });
       submitDone('miniBtn', '✅ Đã gửi — Kỹ sư liên hệ ngay');
       goToThankYou('mini-form');
     });
   }
 
-  var stickyBtn = document.querySelector('[data-action="sticky-submit"]');
-  if (stickyBtn) {
-    stickyBtn.addEventListener('click', function () {
+  var stickyForm = document.getElementById('stickyForm');
+  if (stickyForm) {
+    stickyForm.addEventListener('submit', function (e) {
+      e.preventDefault();
       if (!validatePhone('stickyPhone', 'stickyPhoneError')) return;
       sendLead({
         source: 'sticky-bar',
         phone: (document.getElementById('stickyPhone') || {}).value || ''
       });
-      trackEvent('form_submit', { form_source: 'sticky-bar' });
       submitDone('stickyBtn', '✅ Đã nhận!');
       goToThankYou('sticky-bar');
     });
   }
 
-  var popupBtn = document.querySelector('[data-action="popup-submit"]');
-  if (popupBtn) {
-    popupBtn.addEventListener('click', function () {
+  var popupForm = document.getElementById('popupForm');
+  if (popupForm) {
+    popupForm.addEventListener('submit', function (e) {
+      e.preventDefault();
       if (!validatePhone('popupPhone', 'popupPhoneError')) return;
       sendLead({
         source: 'popup',
         phone: (document.getElementById('popupPhone') || {}).value || '',
         combo: 'Mua 3 tặng 1'
       });
-      trackEvent('form_submit', { form_source: 'popup', combo: 'Mua 3 tặng 1' });
       submitDone('popupBtn', '✅ Đã đăng ký!');
       goToThankYou('popup');
     });

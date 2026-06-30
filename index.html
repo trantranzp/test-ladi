@@ -498,7 +498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- ═══ MINI FORM ═══ -->
-<div class="mini-form">
+<form id="miniForm" class="mini-form">
   <div class="mini-form-title">📲 Để lại SĐT — Kỹ sư gọi lại trong 15 phút</div>
   <label for="miniPhone" class="sr-only">Số điện thoại</label>
   <input type="tel" placeholder="Số điện thoại *" id="miniPhone" class="field-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="miniPhoneError">
@@ -508,8 +508,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <option value="" disabled selected>Loại cây trồng</option>
     <option>Sầu riêng</option><option>Thanh long</option><option>Bưởi / Cam / Quýt</option><option>Xoài / Nhãn</option><option>Tiêu / Cà phê</option><option>Rau màu ngắn ngày</option><option>Lúa</option><option>Đại lý / Cửa hàng</option>
   </select>
-  <button id="miniBtn" type="button" data-action="mini-submit" class="btn btn-urgent">🔥 Nhận báo giá ưu đãi ngay</button>
-</div>
+  <button id="miniBtn" type="submit" data-action="mini-submit" class="btn btn-urgent">🔥 Nhận báo giá ưu đãi ngay</button>
+</form>
 
 <!-- ═══ HƯỚNG DẪN SỬ DỤNG ═══ -->
 <div class="steps-section">
@@ -745,7 +745,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="form-h2">Đăng ký để kỹ sư gọi lại trong <em>15 phút</em></h2>
     <p class="form-sub">Tư vấn miễn phí · Không ràng buộc · COD toàn quốc</p>
   </div>
-  <div class="form-card">
+  <form id="mainForm" class="form-card">
     <label for="mainName" class="sr-only">Họ và tên</label>
     <input type="text" id="mainName" placeholder="Họ và tên" class="field-input">
     <label for="mainPhone" class="sr-only">Số điện thoại</label>
@@ -781,9 +781,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="form-trust-label">Freeship<br>toàn quốc</div>
       </div>
     </div>
-    <button id="mainBtn" type="button" data-action="main-submit" class="btn btn-primary btn-lg">NHẬN BÁO GIÁ NGAY</button>
+    <button id="mainBtn" type="submit" data-action="main-submit" class="btn btn-primary btn-lg">NHẬN BÁO GIÁ NGAY</button>
     <p class="form-disclaimer">Hiệu quả có thể thay đổi tùy điều kiện đất đai và cách chăm sóc</p>
-  </div>
+  </form>
 </div>
 
 <!-- ═══ FOOTER ═══ -->
@@ -816,12 +816,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══ STICKY BAR ═══ -->
 <div class="sticky-bar">
   <div id="stickyPhoneError" class="field-error" role="alert" style="padding:0 14px;margin:6px 0 0;color:#fca5a5"></div>
-  <div class="sticky-bar-inner">
+  <form id="stickyForm" class="sticky-bar-inner">
     <a href="tel:0876767769" class="sticky-call" aria-label="Gọi điện">📞</a>
     <label for="stickyPhone" class="sr-only">Số điện thoại</label>
     <input type="tel" id="stickyPhone" placeholder="SĐT — Kỹ sư gọi lại 15 phút" class="sticky-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="stickyPhoneError">
-    <button id="stickyBtn" type="button" data-action="sticky-submit" class="btn btn-urgent">✨ Báo giá ngay</button>
-  </div>
+    <button id="stickyBtn" type="submit" data-action="sticky-submit" class="btn btn-urgent">✨ Báo giá ngay</button>
+  </form>
 </div>
 
 <!-- ═══ POPUP ═══ -->
@@ -843,10 +843,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="popup-social-text">3.200+ nhà vườn đã đặt · <span>★★★★★</span> 4.9</div>
       </div>
       <div class="popup-call-note">Kỹ sư gọi xác nhận đơn trong <strong>15 phút</strong></div>
-      <label for="popupPhone" class="sr-only">Số điện thoại</label>
-      <input type="tel" id="popupPhone" placeholder="Số điện thoại của bạn" class="popup-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="popupPhoneError">
-      <div id="popupPhoneError" class="field-error" role="alert"></div>
-      <button id="popupBtn" type="button" data-action="popup-submit" class="btn btn-primary btn-sm">ĐẶT NGAY — COMBO 3 TẶNG 1</button>
+      <form id="popupForm">
+        <label for="popupPhone" class="sr-only">Số điện thoại</label>
+        <input type="tel" id="popupPhone" placeholder="Số điện thoại của bạn" class="popup-input" inputmode="numeric" maxlength="12" autocomplete="tel" aria-describedby="popupPhoneError">
+        <div id="popupPhoneError" class="field-error" role="alert"></div>
+        <button id="popupBtn" type="submit" data-action="popup-submit" class="btn btn-primary btn-sm">ĐẶT NGAY — COMBO 3 TẶNG 1</button>
+      </form>
       <div class="popup-trust-row">
         <div>🚚 Freeship</div>
         <div>💵 COD</div>
